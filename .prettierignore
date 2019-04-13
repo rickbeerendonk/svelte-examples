@@ -1,0 +1,13 @@
+#################
+## Svelte Examples
+#################
+
+dist-storybook/
+dist/
+temp/
+
+#################
+## npm / yarn
+#################
+
+node_modules/
