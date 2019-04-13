@@ -2,6 +2,8 @@
 ## Svelte Examples
 #################
 
+**/public/bundle.*
+
 dist-storybook/
 dist/
 temp/
