@@ -1,0 +1,5 @@
+**/dist-storybook/**
+**/coverage/**
+**/dist/**
+**/lib/**
+**/node_modules/**
