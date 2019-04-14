@@ -1,3 +1,7 @@
+/*! European Union Public License version 1.2 !*/
+/*! Copyright © 2019 Rick Beerendonk          !*/
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
@@ -11,10 +15,17 @@ module.exports = {
     extensions: ['.js', '.html']
   },
   output: {
-    path: __dirname + '/public',
+    path: __dirname + '/dist',
     filename: '[name].js',
     chunkFilename: '[name].[id].js'
   },
+  devtool: prod ? false : 'source-map',
+  devServer: {
+    contentBase: './dist',
+    port: 9100,
+    hot: true
+  },
+  mode,
   module: {
     rules: [
       {
@@ -43,11 +54,12 @@ module.exports = {
       }
     ]
   },
-  mode,
   plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Setup - Webpack'
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
     })
-  ],
-  devtool: prod ? false : 'source-map'
+  ]
 };
