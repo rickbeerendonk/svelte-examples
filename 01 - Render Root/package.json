@@ -1,0 +1,24 @@
+{
+  "name": "render-root",
+  "description": "Render Root",
+  "version": "1.0.0",
+  "author": "Rick Beerendonk",
+  "license": "EUPL-1.2",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "next",
+    "mini-css-extract-plugin": "^0.6.0",
+    "serve": "^11.0.0",
+    "style-loader": "^0.23.1",
+    "svelte": "^2.16.1",
+    "svelte-loader": "^2.13.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "webpack-dev-server --open"
+  }
+}
