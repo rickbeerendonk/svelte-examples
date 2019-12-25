@@ -34,8 +34,6 @@ module.exports = {
         use: {
           loader: 'svelte-loader',
           options: {
-            skipIntroByDefault: true,
-            nestedTransitions: true,
             emitCss: true,
             hotReload: true
           }
@@ -56,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Setup - Webpack'
+      title: 'Setup Svelte - Webpack'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'

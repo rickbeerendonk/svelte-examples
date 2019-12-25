@@ -1,6 +1,6 @@
 {
-  "name": "svelte-webpack",
-  "description": "Using Svelte using Webpack",
+  "name": "setup-svelte-webpack",
+  "description": "Setup Svelte using Webpack",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
   "license": "EUPL-1.2",
