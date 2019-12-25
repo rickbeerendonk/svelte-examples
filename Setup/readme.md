@@ -27,3 +27,7 @@ https://github.com/sveltejs/template-webpack
 ```bash
 npx degit sveltejs/template-webpack svelte-app
 ```
+
+## Copyright
+
+Copyright © 2019 Rick Beerendonk
