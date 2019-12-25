@@ -1,6 +1,6 @@
 {
-  "name": "render-root",
-  "description": "Render Root",
+  "name": "render-root-basic-component",
+  "description": "Render Root - Basic Component",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
   "license": "EUPL-1.2",

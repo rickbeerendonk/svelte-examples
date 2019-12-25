@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Render Root'
+      title: 'Render Root - Basic Component'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
