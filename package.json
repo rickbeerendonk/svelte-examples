@@ -48,6 +48,6 @@
     "webpack-dev-server": "3.10.1"
   },
   "dependencies": {
-    "serve": "11.2.0"
+    "serve": "11.3.0"
   }
 }
