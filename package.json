@@ -22,8 +22,8 @@
     "eslint": "eslint . --ext .js --cache",
     "eslint-fix": "eslint . --ext .js --cache --fix",
     "open": "open",
-    "prettier": "prettier --list-different '**/*.{json,js,html,vue}'",
-    "prettier-fix": "prettier --write '**/*.{json,js,html,vue}'",
+    "prettier": "prettier --list-different '**/*.{css,json,js,html,md}'",
+    "prettier-fix": "prettier --write '**/*.{css,json,js,html,md}'",
     "validate": "npm run eslint && npm run prettier"
   },
   "devDependencies": {
