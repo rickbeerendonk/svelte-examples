@@ -9,6 +9,9 @@
   "trailingComma": "none",
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
+  "svelteSortOrder": "scripts-styles-markup",
+  "svelteStrictMode": false,
+  "svelteBracketNewLine": false,
   "overrides": [
     {
       "files": ["*.json"],
