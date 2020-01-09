@@ -1,5 +1,5 @@
 <script>
-  export let name;
+  let name = 'Svelte';
 </script>
 
-<input value={name} />
+<input value="{name}" />
