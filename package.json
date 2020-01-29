@@ -22,8 +22,10 @@
     "eslint": "eslint . --ext .js --cache",
     "eslint-fix": "eslint . --ext .js --cache --fix",
     "open": "open",
+    "openserver": "node \"./Util - 01 - Custom Server/server.js\" 9002",
     "prettier": "prettier --list-different '**/*.{css,json,js,html,md,svelte}'",
     "prettier-fix": "prettier --write '**/*.{css,json,js,html,md,svelte}'",
+    "start": "npm run openserver -- \".\"",
     "validate": "npm run eslint && npm run prettier"
   },
   "devDependencies": {
