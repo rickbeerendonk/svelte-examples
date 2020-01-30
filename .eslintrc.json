@@ -3,7 +3,6 @@
   "env": {
     "browser": true,
     "es6": true,
-    "commonjs": true,
     "node": true
   },
   "parserOptions": {
@@ -15,6 +14,12 @@
     }
   },
   "plugins": ["svelte3", "prettier"],
+  "overrides": [
+    {
+      "files": ["**/*.svelte"],
+      "processor": "svelte3/svelte3"
+    }
+  ],
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
   "rules": {
     "no-debugger": 1,
