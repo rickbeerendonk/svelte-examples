@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Component Interactions - Properties - Basics'
+      title: 'Component Interactions - Properties - Basics - Non-root Component'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'

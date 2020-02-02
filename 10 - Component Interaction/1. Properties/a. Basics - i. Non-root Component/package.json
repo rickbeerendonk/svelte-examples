@@ -1,6 +1,6 @@
 {
-  "name": "component_interaction-properties-basics",
-  "description": "Component Interactions - Properties - Basics",
+  "name": "component_interaction-properties-basics-non_root_component",
+  "description": "Component Interactions - Properties - Basics - Non-root Component",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
   "license": "EUPL-1.2",
