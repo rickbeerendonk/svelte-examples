@@ -1,6 +1,6 @@
 {
-  "name": "list_rendering-each",
-  "description": "List Rendering - Each",
+  "name": "list_rendering-each-array_like",
+  "description": "List Rendering - Each - Array Like",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
   "license": "EUPL-1.2",

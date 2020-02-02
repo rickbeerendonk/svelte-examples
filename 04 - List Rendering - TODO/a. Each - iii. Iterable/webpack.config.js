@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'List Rendering - Each'
+      title: 'List Rendering - Each - Iterable'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
