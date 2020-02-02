@@ -47,14 +47,7 @@ if (filePath && fs.statSync(filePath).isDirectory()) {
     console.log('webpack config: ' + webpackConfigPath);
     childProcess.spawnSync(
       'webpack-dev-server',
-      [
-        '--config',
-        `"${webpackConfigPath}"`,
-        '--hot',
-        '--open',
-        '--port',
-        portHttp
-      ],
+      ['--config', `"${webpackConfigPath}"`, '--open', '--port', portHttp],
       {
         cwd: path.dirname(webpackConfigPath),
         shell: true,
