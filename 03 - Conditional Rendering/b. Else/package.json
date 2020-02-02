@@ -1,6 +1,6 @@
 {
-  "name": "list_rendering-if",
-  "description": "List Rendering - If",
+  "name": "conditional_rendering-else",
+  "description": "Conditional Rendering - Else",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
   "license": "EUPL-1.2",

@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'List Rendering - Else'
+      title: 'Conditional Rendering - If'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
