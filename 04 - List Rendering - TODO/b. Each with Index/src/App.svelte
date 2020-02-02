@@ -2,9 +2,9 @@
   const items = new Set(['A', 'B', 'C']);
 </script>
 
-<ul>
+<ol>
   <!-- first convert into array -->
-  {#each [...items] as item}
-    <li>{item}</li>
+  {#each [...items] as item, index}
+    <li value={index}>{item}</li>
   {/each}
-</ul>
+</ol>

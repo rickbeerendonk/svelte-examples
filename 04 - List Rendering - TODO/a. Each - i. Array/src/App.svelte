@@ -1,5 +1,5 @@
 <script>
-  let items = ['one', 'two', 'three'];
+  const items = ['one', 'two', 'three'];
 </script>
 
 <ul>

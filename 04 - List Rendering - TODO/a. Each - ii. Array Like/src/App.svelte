@@ -1,6 +1,6 @@
 <script>
   // Array like = Has length property.
-  let items = 'items';
+  const items = 'items';
 </script>
 
 <ul>
