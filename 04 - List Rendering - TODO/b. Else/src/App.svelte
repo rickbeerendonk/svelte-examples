@@ -7,3 +7,10 @@
 {:else}
   <span>Invisible (not rendered!)</span>
 {/if}
+
+<!--
+  Block:
+  # = Open
+  : = Continue
+  / = Close
+-->
