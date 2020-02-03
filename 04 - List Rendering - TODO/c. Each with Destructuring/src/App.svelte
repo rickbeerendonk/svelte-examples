@@ -11,3 +11,6 @@
     <li>{name} is {age} years old</li>
   {/each}
 </ul>
+
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
