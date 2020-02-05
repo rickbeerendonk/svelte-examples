@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Classes - Dynamic'
+      title: 'Classes - Using Directive'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
