@@ -14,15 +14,10 @@
   }
 </style>
 
-<div class="container">
+<div class="container" let:source>
   Normal:
   <div class="content">
-    <slot name="first" />
-  </div>
-  Slot prop:
-  <div class="content">
-    <!-- Pass the source as prop -->
-    <slot name="second" {source} />
+    <slot {source} />
   </div>
 </div>
 
