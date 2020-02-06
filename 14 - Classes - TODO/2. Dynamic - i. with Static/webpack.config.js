@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Classes - Static and Dynamic'
+      title: 'Classes - Dynamic - with Static'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
