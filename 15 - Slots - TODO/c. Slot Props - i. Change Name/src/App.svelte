@@ -9,9 +9,12 @@
     <em>First: {source}</em>
   </span>
 
-  <!-- Declare a let to use Slot Prop "source" -->
-  <span slot="second" let:source>
-    <b>Second: {source}</b>
+  <!-- 
+    Declare a let to use Slot Prop "source".
+    Rename Slot Prop so we don't have two different "source" values.
+  -->
+  <span slot="second" let:source={containerSource}>
+    <b>Second: {containerSource}</b>
   </span>
 </Container>
 
