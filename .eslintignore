@@ -1,7 +1,16 @@
-**/public/bundle.*
+#################
+## Svelte Examples
+#################
 
+**/public/bundle.*
 **/dist-storybook/**
 **/coverage/**
 **/dist/**
 **/lib/**
+**/temp/**
+
+#################
+## npm / yarn
+#################
+
 **/node_modules/**
