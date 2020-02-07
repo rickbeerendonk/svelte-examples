@@ -6,12 +6,8 @@
     "node": true
   },
   "parserOptions": {
-    "parser": "babel-eslint",
     "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "sourceType": "module"
   },
   "plugins": ["svelte3", "prettier"],
   "overrides": [
