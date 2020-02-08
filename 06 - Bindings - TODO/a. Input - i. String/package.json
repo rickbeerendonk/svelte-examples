@@ -1,6 +1,6 @@
 {
-  "name": "bindings-input",
-  "description": "Bindings - Input",
+  "name": "bindings-input-string",
+  "description": "Bindings - Input - String",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
   "license": "EUPL-1.2",

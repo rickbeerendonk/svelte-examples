@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Bindings - Input'
+      title: 'Bindings - Input - String'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
