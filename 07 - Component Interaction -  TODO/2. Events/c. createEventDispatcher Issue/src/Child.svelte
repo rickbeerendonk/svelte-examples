@@ -1,10 +1,10 @@
 <script>
   import { createEventDispatcher } from 'svelte';
 
-  // Call createEventDispatcher() during Component Initialisation
-  const dispatch = createEventDispatcher();
-
   function buttonClicked() {
+    // Wrong: createEventDispatcher should have been called during Component Initialisation
+    const dispatch = createEventDispatcher();
+
     dispatch('updated');
   }
 </script>

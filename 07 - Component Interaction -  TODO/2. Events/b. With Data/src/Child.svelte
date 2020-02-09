@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
 
+  // Call createEventDispatcher() during Component Initialisation
   const dispatch = createEventDispatcher();
 
   export let name;
