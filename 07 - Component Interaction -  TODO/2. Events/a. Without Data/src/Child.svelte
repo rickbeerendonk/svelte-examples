@@ -1,0 +1,14 @@
+<script>
+  import { createEventDispatcher } from 'svelte';
+
+  const dispatch = createEventDispatcher();
+
+  function buttonClicked() {
+    dispatch('updated');
+  }
+</script>
+
+<button on:click={buttonClicked}>Click</button>
+
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
