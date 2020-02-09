@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Component Interaction - Events - With Data'
+      title: 'Component Interaction - Events - With Data - Single value'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
