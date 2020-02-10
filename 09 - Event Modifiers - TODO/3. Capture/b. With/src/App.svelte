@@ -38,7 +38,7 @@
 </style>
 
 <p class="comment">
-  Observe that when clicking the child, the parent's on:click
+  Observe that when clicking the child, the parent's
   <b>
     <u>on:click|capture</u>
   </b>
