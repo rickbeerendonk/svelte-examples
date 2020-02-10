@@ -28,7 +28,7 @@
 </style>
 
 <p class="comment">
-  Observe that when clicking the child, the parent's onClick handler IS NOT
+  Observe that when clicking the child, the parent's on:click handler IS NOT
   triggered, but the second child handler IS triggered.
 </p>
 
