@@ -22,6 +22,7 @@ module.exports = {
   devtool: prod ? false : 'source-map',
   devServer: {
     contentBase: './dist',
+    hot: true,
     port: 9100
   },
   mode,
