@@ -55,7 +55,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Event Modifiers - Stop - Without'
+      title: 'Event Modifiers - stopPropagation - Without'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'

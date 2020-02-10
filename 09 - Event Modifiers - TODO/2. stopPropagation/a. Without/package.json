@@ -1,6 +1,6 @@
 {
-  "name": "event_modifiers-stop-without",
-  "description": "Event Modifiers - Stop - Without",
+  "name": "event_modifiers-stoppropagation-without",
+  "description": "Event Modifiers - stopPropagation - Without",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
   "license": "EUPL-1.2",
