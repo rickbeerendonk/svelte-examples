@@ -22,7 +22,7 @@ module.exports = {
   devtool: prod ? false : 'source-map',
   devServer: {
     contentBase: './dist',
-    hot: true,
+    // hot: true, // Bug, so don't use
     port: 9100
   },
   mode,
