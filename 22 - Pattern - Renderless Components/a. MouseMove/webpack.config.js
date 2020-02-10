@@ -22,7 +22,7 @@ module.exports = {
   devtool: prod ? false : 'source-map',
   devServer: {
     contentBase: './dist',
-    hot: true,
+    // hot: true, // Bug, so don't use
     port: 9100
   },
   mode,
@@ -55,7 +55,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Pattern - Renderless Components'
+      title: 'Pattern - Renderless Components - MouseMove'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
