@@ -21,7 +21,7 @@
 <Middle />
 <button on:click={handleSwitch}>Switch color</button>
 <p class="comment">
-  Observe that the button doesn't work, because a context is not reactive.
+  Observe that the button DOES NOT work, because a context is not reactive.
 </p>
 
 <!-- European Union Public License version 1.2 -->
