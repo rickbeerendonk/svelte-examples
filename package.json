@@ -29,6 +29,7 @@
     "validate": "npm run eslint && npm run prettier"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "5.1.1",
     "css-loader": "3.4.2",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
