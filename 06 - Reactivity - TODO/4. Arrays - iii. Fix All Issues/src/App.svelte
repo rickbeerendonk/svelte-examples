@@ -3,7 +3,7 @@
 
   function handleClick() {
     arr.push(new Date());
-    // After every change off the array, call arr = arr
+    // After every "unreactive" change of the array, call arr = arr
     arr = arr;
   }
 </script>
