@@ -5,7 +5,6 @@
     obj.prop1 = !obj.prop1;
     obj.prop2 += '.';
     obj.prop3 += 10;
-    console.log(JSON.stringify(obj));
   }
 </script>
 
@@ -16,8 +15,8 @@
 </style>
 
 <p class="comment">
-  Observe that clicking doesn't update the object. Open the console to see the
-  real object (proof of it's update).
+  Observe that clicking does update the object. As long as the object variable
+  name is on the left side of the assignment, reactivity works.
 </p>
 <button on:click={handleClick}>Change object</button>
 <p>{JSON.stringify(obj)}</p>
