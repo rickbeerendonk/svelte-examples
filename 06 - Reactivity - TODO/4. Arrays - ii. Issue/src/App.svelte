@@ -3,6 +3,7 @@
 
   function handleClick() {
     arr.push(new Date());
+
     console.log(arr.length);
   }
 </script>
