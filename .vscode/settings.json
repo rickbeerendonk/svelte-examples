@@ -1,14 +1,5 @@
 {
   "editor.tabSize": 2,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "html",
-      "autoFix": true
-    }
-  ],
-  "files.associations": {
-    "*.svelte": "html"
-  }
+  "eslint.validate": ["javascript", "svelte"],
+  "svelte.plugin.typescript.enable": false
 }
