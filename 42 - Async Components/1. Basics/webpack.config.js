@@ -55,7 +55,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Dynamic Components - Lazy Loading'
+      title: 'Async Components - Basics'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
