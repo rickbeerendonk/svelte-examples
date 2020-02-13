@@ -1,20 +1,12 @@
 <script>
-  const GreetingDutch = () => import('./components/GreetingDutch');
-  const GreetingEnglish = () => import('./components/GreetingEnglish');
-  const GreetingSpanish = () => import('./components/GreetingSpanish');
-
-  const languages = [
-    { name: 'dutch', component: GreetingDutch },
-    { name: 'english', component: GreetingEnglish },
-    { name: 'spanish', component: GreetingSpanish }
-  ];
+  const languages = ['Dutch', 'English', 'Spanish'];
 
   let selectedLanguage = null;
   let selectedComponent = null;
 
   $: {
     if (selectedLanguage) {
-      selectedLanguage.component().then(module => {
+      import(`./components/Greeting${selectedLanguage}.svelte`).then(module => {
         selectedComponent = module.default;
       });
     }
@@ -30,7 +22,7 @@
 {#each languages as language}
   <label>
     <input bind:group={selectedLanguage} type="radio" value={language} />
-    {language.name}
+    {language}
   </label>
 {/each}
 
