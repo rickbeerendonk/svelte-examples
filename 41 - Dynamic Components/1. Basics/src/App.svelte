@@ -9,13 +9,10 @@
     switch (language) {
       case 'dutch':
         return GreetingDutch;
-        break;
       case 'spanish':
         return GreetingSpanish;
-        break;
       default:
         return GreetingEnglish;
-        break;
     }
   })();
 </script>
