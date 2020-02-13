@@ -1,5 +1,5 @@
 {
-  "name": "context_api-multiple_setcontext",
+  "name": "svelte-context_api-multiple_setcontext",
   "description": "Context API - Multiple setContext",
   "version": "1.0.0",
   "author": "Rick Beerendonk",

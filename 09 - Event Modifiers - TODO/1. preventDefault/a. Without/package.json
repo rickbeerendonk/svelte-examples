@@ -1,5 +1,5 @@
 {
-  "name": "event_modifiers-preventdefault-without",
+  "name": "svelte-event_modifiers-preventdefault-without",
   "description": "Event Modifiers - preventDefault - Without",
   "version": "1.0.0",
   "author": "Rick Beerendonk",

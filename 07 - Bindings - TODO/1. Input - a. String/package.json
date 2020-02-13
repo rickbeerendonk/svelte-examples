@@ -1,5 +1,5 @@
 {
-  "name": "bindings-input-string",
+  "name": "svelte-bindings-input-string",
   "description": "Bindings - Input - String",
   "version": "1.0.0",
   "author": "Rick Beerendonk",

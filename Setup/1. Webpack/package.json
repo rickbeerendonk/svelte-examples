@@ -1,5 +1,5 @@
 {
-  "name": "setup-svelte-webpack",
+  "name": "svelte-setup-svelte-webpack",
   "description": "Setup Svelte using Webpack",
   "version": "1.0.0",
   "author": "Rick Beerendonk",

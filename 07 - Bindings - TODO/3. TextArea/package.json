@@ -1,5 +1,5 @@
 {
-  "name": "bindings-textarea",
+  "name": "svelte-bindings-textarea",
   "description": "Bindings - TextArea",
   "version": "1.0.0",
   "author": "Rick Beerendonk",

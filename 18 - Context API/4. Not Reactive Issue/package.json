@@ -1,5 +1,5 @@
 {
-  "name": "context_api-not_reactive_issue",
+  "name": "svelte-context_api-not_reactive_issue",
   "description": "Context API - Not Reactive Issue",
   "version": "1.0.0",
   "author": "Rick Beerendonk",

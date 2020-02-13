@@ -1,5 +1,5 @@
 {
-  "name": "data_binding-data_to_view-curly_braces_as_text",
+  "name": "svelte-data_binding-data_to_view-curly_braces_as_text",
   "description": "Data Binding - Data to View - Curly Braces as Text",
   "version": "1.0.0",
   "author": "Rick Beerendonk",

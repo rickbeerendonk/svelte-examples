@@ -1,5 +1,5 @@
 {
-  "name": "event_modifiers-stoppropagation-without",
+  "name": "svelte-event_modifiers-stoppropagation-without",
   "description": "Event Modifiers - stopPropagation - Without",
   "version": "1.0.0",
   "author": "Rick Beerendonk",

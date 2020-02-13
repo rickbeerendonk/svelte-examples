@@ -1,5 +1,5 @@
 {
-  "name": "bindings-input-contenteditable",
+  "name": "svelte-bindings-input-contenteditable",
   "description": "Bindings - Input - ContentEditable",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
