@@ -9,14 +9,9 @@
   }
 
   function handleClick2() {
-    count2.update(value => {
+    count2.update((_, value) => {
       // "value == undefined" short for "(value === undefined) || (value === null)"
-      const result = value == undefined ? 0 : value + 1;
-
-      // Weird: "undefined => 0" twice???
-      console.log(`${value} => ${result}`);
-
-      return result;
+      return value == undefined ? 0 : value + 1;
     });
   }
 </script>
