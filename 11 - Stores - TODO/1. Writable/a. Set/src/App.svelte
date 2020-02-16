@@ -1,15 +1,15 @@
 <script>
   import Child from './Child.svelte';
-  import { count as storeCount } from './stores';
+  import { name as storeName } from './stores';
 
-  let count = 0;
+  let name = 0;
 
-  storeCount.subscribe(newValue => (count = newValue));
+  storeName.subscribe(value => (name = value));
 </script>
 
 <div>
   <Child />
-  <h1>Clicked: {count}</h1>
+  <h1>Hello {name}!</h1>
 </div>
 
 <!-- European Union Public License version 1.2 -->
