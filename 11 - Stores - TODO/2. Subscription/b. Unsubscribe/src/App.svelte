@@ -1,8 +1,8 @@
 <script>
   import { tick } from 'svelte';
 
-  import Child1 from './Child1.svelte';
-  import Child2 from './Child2.svelte';
+  import Child_Set from './Child_Set.svelte';
+  import Child_Subscribe from './Child_Subscribe.svelte';
 
   let visible = true;
 
@@ -17,9 +17,9 @@
   </button>
   <hr />
   <div>
-    <Child1 />
+    <Child_Set />
     {#if visible}
-      <Child2 />
+      <Child_Subscribe />
     {/if}
   </div>
 </div>
