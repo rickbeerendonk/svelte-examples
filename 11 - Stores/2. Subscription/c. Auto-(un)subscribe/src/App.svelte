@@ -11,17 +11,15 @@
   }
 </script>
 
+<button on:click={handleClick}>
+  {#if visible}Hide{:else}Show{/if}
+</button>
+<hr />
 <div>
-  <button on:click={handleClick}>
-    {#if visible}Hide{:else}Show{/if}
-  </button>
-  <hr />
-  <div>
-    <Child_Set />
-    {#if visible}
-      <Child_Subscribe />
-    {/if}
-  </div>
+  <Child_Set />
+  {#if visible}
+    <Child_Subscribe />
+  {/if}
 </div>
 
 <!-- European Union Public License version 1.2 -->

@@ -7,10 +7,8 @@
   storeCount.subscribe(value => (count = value));
 </script>
 
-<div>
-  <Child />
-  <h1>Clicked: {count}</h1>
-</div>
+<Child />
+<h1>Clicked: {count}</h1>
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
