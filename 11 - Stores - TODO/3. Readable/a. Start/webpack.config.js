@@ -55,7 +55,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Stores - Readable - Basics'
+      title: 'Stores - Readable - Start'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
