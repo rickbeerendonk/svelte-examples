@@ -17,8 +17,9 @@ export const time = readable(
 
     // Stop setting values when there are no listeners
     return function() {
-      clearInterval(intervalId);
       console.log('◀ Stop readable store');
+
+      clearInterval(intervalId);
     };
   }
 );
