@@ -16,5 +16,5 @@ export const nameUpperCase = derived(
     setTimeout(() => set(value.toUpperCase()), 1000);
   },
   // Initial value
-  `...processing...`
+  '...processing...'
 );
