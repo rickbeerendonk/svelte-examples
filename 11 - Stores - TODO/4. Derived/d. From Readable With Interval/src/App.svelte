@@ -11,6 +11,12 @@
 
 <div>
   <p class="comment">
+    This example demonstrates that if all subscriptions to a derived store are
+    unsubscribed, that the derived store is unsubscribing from its sources as
+    well.
+  </p>
+
+  <p class="comment">
     Open the console. Click the button multiple times and see intervals are
     started and stopped. An interval is 5 seconds.
   </p>
