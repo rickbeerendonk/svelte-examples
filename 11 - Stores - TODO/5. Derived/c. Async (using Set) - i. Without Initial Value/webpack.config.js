@@ -55,7 +55,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Stores - Derived - Async (using Set)'
+      title: 'Stores - Derived - Async (using Set) - Without Initial Value'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'

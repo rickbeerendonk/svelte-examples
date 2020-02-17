@@ -12,9 +12,9 @@ export const nameUpperCase = derived(
   name,
   // Value calculation using set (instead of return)
   function(value, set) {
-    // Immediately:
-    set(value.toLowerCase());
     // After 1 second:
     setTimeout(() => set(value.toUpperCase()), 1000);
-  }
+  },
+  // Initial value
+  `...processing...`
 );

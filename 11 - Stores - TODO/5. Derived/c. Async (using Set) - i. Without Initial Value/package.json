@@ -1,6 +1,6 @@
 {
-  "name": "svelte-stores-derived-async",
-  "description": "Stores - Derived - Async (using Set)",
+  "name": "svelte-stores-derived-async_using_set-without_initial_value",
+  "description": "Stores - Derived - Async (using Set) - Without Initial Value",
   "version": "1.0.0",
   "author": "Rick Beerendonk",
   "license": "EUPL-1.2",
