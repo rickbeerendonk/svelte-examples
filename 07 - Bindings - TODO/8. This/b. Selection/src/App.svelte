@@ -1,12 +1,14 @@
 <script>
   import { onMount } from 'svelte';
 
-  let h1Ref;
+  let inputRef;
+  let name = 'Svelte';
 
-  onMount(() => (h1Ref.innerHTML = 'Hello <u>Svelte</u>!!!'));
+  onMount(() => inputRef.select());
 </script>
 
-<h1 bind:this={h1Ref}>Hello World!</h1>
+<input bind:this={inputRef} bind:value={name} />
+<h1>Hello {name}!</h1>
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
