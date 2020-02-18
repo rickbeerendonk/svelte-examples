@@ -1,6 +1,4 @@
 <script>
-  import { tick } from 'svelte';
-
   import Child_Get from './Child_Get.svelte';
 
   let visible = true;
