@@ -5,9 +5,9 @@ import { storiesOf } from '@storybook/svelte';
 
 import GreetingEditor from './GreetingEditor.svelte';
 
-storiesOf('GreetingEditor', module).add('with name', () => ({
+storiesOf('GreetingEditor', module).add('with value', () => ({
   Component: GreetingEditor,
   props: {
-    name: 'Storybook'
+    value: 'Storybook'
   }
 }));
