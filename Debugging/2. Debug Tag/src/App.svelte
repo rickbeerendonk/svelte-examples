@@ -7,6 +7,17 @@
   }, 1000);
 </script>
 
+<style>
+  .comment {
+    color: gray;
+  }
+</style>
+
+<p class="comment">
+  Open the console to see &#123;@debug ...&#125; hitting breakpoints are logging
+  to the console.
+</p>
+
 <!-- @debug is in a template what console.log() + debugger is in JavaScript -->
 {@debug count, time}
 
