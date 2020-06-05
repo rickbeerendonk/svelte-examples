@@ -6,9 +6,11 @@
 
   $: {
     if (selectedLanguage) {
-      import(`./components/Greeting${selectedLanguage}.svelte`).then(module => {
-        selectedComponent = module.default;
-      });
+      import(`./components/Greeting${selectedLanguage}.svelte`).then(
+        (module) => {
+          selectedComponent = module.default;
+        }
+      );
     }
   }
 </script>

@@ -9,7 +9,7 @@ export const time = readable(
   // Initial value
   undefined,
   // Start setting values
-  function(set) {
+  function (set) {
     console.log('▶ Start readable store');
 
     // Internal set

@@ -13,10 +13,10 @@
     if (selectedLanguage) {
       selectedComponent = Loading;
       import(`./components/Greeting${selectedLanguage}.svelte`)
-        .then(module => {
+        .then((module) => {
           selectedComponent = module.default;
         })
-        .catch(err => {
+        .catch((err) => {
           selectedComponent = Error;
         });
     }

@@ -9,14 +9,14 @@ export const time = readable(
   // Initial value
   undefined,
   // Start setting values
-  function(set) {
+  function (set) {
     console.log('▶ Start readable store');
 
     // Internal set
     const intervalId = setInterval(() => set(new Date()), 5000);
 
     // Stop setting values when there are no listeners
-    return function() {
+    return function () {
       console.log('◀ Stop readable store');
 
       clearInterval(intervalId);

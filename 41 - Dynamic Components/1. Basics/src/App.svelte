@@ -5,7 +5,7 @@
 
   let language = 'english';
 
-  $: greetingComponent = (function() {
+  $: greetingComponent = (function () {
     switch (language) {
       case 'dutch':
         return GreetingDutch;

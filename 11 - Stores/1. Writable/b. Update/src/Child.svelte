@@ -2,7 +2,7 @@
   import { count } from './stores';
 
   function buttonClicked() {
-    count.update(value => value + 1);
+    count.update((value) => value + 1);
   }
 </script>
 

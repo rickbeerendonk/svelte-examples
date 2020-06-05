@@ -4,7 +4,7 @@
 
   let name = 0;
 
-  storeName.subscribe(value => (name = value));
+  storeName.subscribe((value) => (name = value));
 </script>
 
 <Child />

@@ -4,7 +4,7 @@
 
   let name = 0;
 
-  const unsubscribeName = storeName.subscribe(value => (name = value));
+  const unsubscribeName = storeName.subscribe((value) => (name = value));
 
   onDestroy(() => {
     // Prevent memory leak (when component is unloaded)

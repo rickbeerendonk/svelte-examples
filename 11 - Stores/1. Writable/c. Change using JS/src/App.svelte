@@ -3,7 +3,7 @@
 
   let name = 0;
 
-  storeName.subscribe(value => (name = value));
+  storeName.subscribe((value) => (name = value));
 </script>
 
 <h1>Hello {name}!</h1>

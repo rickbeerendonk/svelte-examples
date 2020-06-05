@@ -5,7 +5,7 @@
 
   function handleClick() {
     // Update (Read + Write)
-    count.update(value => value + 1);
+    count.update((value) => value + 1);
   }
 </script>
 

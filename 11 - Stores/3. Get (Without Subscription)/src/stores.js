@@ -5,10 +5,10 @@
 
 import { readable } from 'svelte/store';
 
-export const name = readable('Svelte', function() {
+export const name = readable('Svelte', function () {
   console.log('▶ Subscribe store');
 
-  return function() {
+  return function () {
     console.log('◀ Unsubscribe store');
   };
 });

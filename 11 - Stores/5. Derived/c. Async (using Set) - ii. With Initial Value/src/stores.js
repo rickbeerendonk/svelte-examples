@@ -11,7 +11,7 @@ export const nameUpperCase = derived(
   // Store(s)
   name,
   // Value calculation using set (instead of return)
-  function(value, set) {
+  function (value, set) {
     // After 1 second:
     setTimeout(() => set(value.toUpperCase()), 1000);
   },

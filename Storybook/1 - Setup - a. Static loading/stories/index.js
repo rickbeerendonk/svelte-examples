@@ -39,7 +39,7 @@ storiesOf('EditBox', module)
   .add('with onChange', () => ({
     Component: EditBox,
     on: {
-      change: decorate([args => args[0].detail]).action('editbox-change')
+      change: decorate([(args) => args[0].detail]).action('editbox-change')
     }
   }));
 

@@ -11,5 +11,5 @@ export const nameUpperCase = derived(
   // Store(s)
   name,
   // Value calculation
-  $name => $name.toUpperCase()
+  ($name) => $name.toUpperCase()
 );
