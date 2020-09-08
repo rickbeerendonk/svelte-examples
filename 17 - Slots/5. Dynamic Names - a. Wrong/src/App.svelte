@@ -16,13 +16,9 @@
 </script>
 
 <Container>
-  <span slot={name1}>
-    <em>First</em>
-  </span>
+  <span slot={name1}> <em>First</em> </span>
 
-  <span slot={name2}>
-    <b>Second</b>
-  </span>
+  <span slot={name2}> <b>Second</b> </span>
 </Container>
 
 <button @click="handleSwitch">Switch</button>

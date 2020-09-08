@@ -14,14 +14,8 @@
 <div>
   <h2>Component Immutable</h2>
   <ul>
-    <li>
-      objCorrect.name:
-      <b>{objCorrect.name}</b>
-    </li>
-    <li>
-      objWrong.name:
-      <b>{objWrong.name}</b>
-    </li>
+    <li>objCorrect.name: <b>{objCorrect.name}</b></li>
+    <li>objWrong.name: <b>{objWrong.name}</b></li>
   </ul>
 </div>
 

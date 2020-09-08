@@ -8,9 +8,7 @@
   <span>Español</span>
 {:else if language === 'nl'}
   <span>Nederlands</span>
-{:else}
-  <span>Unknown</span>
-{/if}
+{:else}<span>Unknown</span>{/if}
 
 <!--
   Block:

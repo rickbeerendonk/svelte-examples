@@ -38,11 +38,9 @@
 </style>
 
 <p class="comment">
-  Observe that when clicking the child, the parent's
-  <b>
+  Observe that when clicking the child, the parent's <b>
     <u>on:click|capture</u>
-  </b>
-  handler is triggered BEFORE the child.
+  </b> handler is triggered BEFORE the child.
 </p>
 
 <div

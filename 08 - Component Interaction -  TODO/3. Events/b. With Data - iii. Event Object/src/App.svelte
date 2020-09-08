@@ -20,14 +20,8 @@
   <h1>Event Object</h1>
   {#if eventObject}
     <ul>
-      <li>
-        Type:
-        <b>{eventObject.type}</b>
-      </li>
-      <li>
-        Detail:
-        <b>{JSON.stringify(eventObject.detail)}</b>
-      </li>
+      <li>Type: <b>{eventObject.type}</b></li>
+      <li>Detail: <b>{JSON.stringify(eventObject.detail)}</b></li>
       <li class="remark">Open console for more properties.</li>
     </ul>
   {:else}

@@ -17,19 +17,11 @@
 
 <Container>
   <span slot="first">
-    {#if name1 === 'first'}
-      <em>First</em>
-    {:else}
-      <b>Second</b>
-    {/if}
+    {#if name1 === 'first'}<em>First</em>{:else}<b>Second</b>{/if}
   </span>
 
   <span slot="second">
-    {#if name2 === 'second'}
-      <b>Second</b>
-    {:else}
-      <em>First</em>
-    {/if}
+    {#if name2 === 'second'}<b>Second</b>{:else}<em>First</em>{/if}
   </span>
 </Container>
 

@@ -19,9 +19,7 @@
 
 <ol>
   {#each [...items] as item, index (item.id)}
-    <li value={index}>
-      <input placeholder={item.name} />
-    </li>
+    <li value={index}><input placeholder={item.name} /></li>
   {/each}
 </ol>
 

@@ -6,13 +6,9 @@
   <!-- v-slot:default -->
   <u>Default</u>
 
-  <span slot="first">
-    <em>First</em>
-  </span>
+  <span slot="first"> <em>First</em> </span>
 
-  <span slot="second">
-    <b>Second</b>
-  </span>
+  <span slot="second"> <b>Second</b> </span>
 </Container>
 
 <!-- European Union Public License version 1.2 -->

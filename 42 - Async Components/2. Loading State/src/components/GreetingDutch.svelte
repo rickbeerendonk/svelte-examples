@@ -2,10 +2,7 @@
   let greeting = 'Wereld';
 </script>
 
-<label>
-  Dutch:
-  <input bind:value={greeting} />
-</label>
+<label> Dutch: <input bind:value={greeting} /> </label>
 <p>Hallo {greeting}</p>
 
 <!-- European Union Public License version 1.2 -->

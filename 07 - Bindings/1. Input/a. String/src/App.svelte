@@ -2,24 +2,17 @@
   let name = 'Svelte';
 </script>
 
-<label>
-  One way:
-  <input value={name} />
-</label>
+<label> One way: <input value={name} /> </label>
 
 <br />
 
 <label>
-  Two way (long):
-  <input value={name} on:input={(e) => (name = e.target.value)} />
+  Two way (long): <input value={name} on:input={(e) => (name = e.target.value)} />
 </label>
 
 <br />
 
-<label>
-  Two way (short):
-  <input bind:value={name} />
-</label>
+<label> Two way (short): <input bind:value={name} /> </label>
 
 <h1>Hello {name}!</h1>
 

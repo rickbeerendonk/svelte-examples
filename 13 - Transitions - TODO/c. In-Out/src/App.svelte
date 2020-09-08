@@ -4,10 +4,7 @@
   let visible = true;
 </script>
 
-<label>
-  <input type="checkbox" bind:checked={visible} />
-  Visible
-</label>
+<label> <input type="checkbox" bind:checked={visible} /> Visible </label>
 
 {#if visible}
   <h1 in:fade={{ duration: 3000 }} out:fade={{ duration: 400 }}>

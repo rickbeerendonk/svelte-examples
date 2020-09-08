@@ -2,17 +2,11 @@
   let count = 0;
 </script>
 
-<label>
-  type = number:
-  <input type="number" bind:value={count} />
-</label>
+<label> type = number: <input type="number" bind:value={count} /> </label>
 
 <br />
 
-<label>
-  type = range:
-  <input type="range" bind:value={count} />
-</label>
+<label> type = range: <input type="range" bind:value={count} /> </label>
 
 <h1>Count is of type {typeof count} and has value {count}</h1>
 

@@ -6,6 +6,7 @@ A svelte component is a self-contained reusable combination of HTML, CSS and JS 
 
 ```svelte
 <h1>Hello Svelte!</h1>
+
 ```
 
 ## Root Component Creation

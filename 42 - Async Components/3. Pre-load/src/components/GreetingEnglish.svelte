@@ -2,10 +2,7 @@
   let greeting = 'World';
 </script>
 
-<label>
-  English:
-  <input bind:value={greeting} />
-</label>
+<label> English: <input bind:value={greeting} /> </label>
 <p>Hello {greeting}</p>
 
 <!-- European Union Public License version 1.2 -->

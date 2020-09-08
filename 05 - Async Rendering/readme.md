@@ -18,9 +18,7 @@ const promise = new Promise((resolve, reject) => {
 {:then name}
 <h1>Hello {name}!</h1>
 {:catch error}
-<p style="color: red">
-  {error.message}
-</p>
+<p style="color: red">{error.message}</p>
 {/await}
 ```
 

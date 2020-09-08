@@ -4,10 +4,7 @@
   let visible = true;
 </script>
 
-<label>
-  <input type="checkbox" bind:checked={visible} />
-  Visible
-</label>
+<label> <input type="checkbox" bind:checked={visible} /> Visible </label>
 
 {#if visible}
   <h1 transition:fade>Hello Svelte!</h1>
