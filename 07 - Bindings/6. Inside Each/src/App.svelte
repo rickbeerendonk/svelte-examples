@@ -5,6 +5,7 @@
 {#each items as item, index}
   <label>
     {index + 1}:
+
     <!-- Bindings work inside {#each} -->
     <input type="range" bind:value={item} />
   </label>

@@ -23,7 +23,8 @@
 </style>
 
 <label>
-  Font size: <input type="range" bind:value={fs} min="8" max="40" />
+  Font size:
+  <input type="range" bind:value={fs} min="8" max="40" />
 </label>
 
 <div class="container" style="font-size: {fs}px">

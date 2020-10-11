@@ -13,7 +13,8 @@ So in Svelte use bind:value={} instead.`;
 </style>
 
 <label>
-  Without binding: <br />
+  Without binding:
+  <br />
   <!-- prettier-ignore-start -->
   <textarea>
     HTML doesn't support multiple lines in attributes. Therefor place content

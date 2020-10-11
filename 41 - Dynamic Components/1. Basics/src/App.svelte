@@ -25,13 +25,16 @@
 </style>
 
 <label>
-  <input bind:group={language} type="radio" value="dutch" /> Dutch
+  <input bind:group={language} type="radio" value="dutch" />
+  Dutch
 </label>
 <label>
-  <input bind:group={language} type="radio" value="english" /> English
+  <input bind:group={language} type="radio" value="english" />
+  English
 </label>
 <label>
-  <input bind:group={language} type="radio" value="spanish" /> Spanish
+  <input bind:group={language} type="radio" value="spanish" />
+  Spanish
 </label>
 
 <div id="result">
