@@ -7,15 +7,7 @@ const childProcess = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-const portHttp = process.argv[2] || 8080;
-//const portRest = +portHttp + 1;
-let filePath = process.argv[3];
-//const basePath = process.cwd();
-
-//console.log('portHttp: ' + portHttp);
-//console.log('portRest: ' + portRest);
-//console.log('filePath: ' + filePath);
-//console.log('basePath: ' + basePath);
+const [, , portHttp = 8080, filePath] = process.argv;
 
 /*** Helper functions ***/
 
