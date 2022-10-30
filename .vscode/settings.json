@@ -1,5 +1,8 @@
 {
   "editor.tabSize": 2,
   "eslint.validate": ["javascript", "svelte"],
-  "svelte.plugin.typescript.enable": false
+  "svelte.plugin.typescript.enable": false,
+
+  // Disable CSpell
+  "cSpell.enabled": false
 }
