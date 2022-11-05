@@ -21,7 +21,11 @@ module.exports = {
   },
   devtool: prod ? false : 'source-map',
   devServer: {
-    contentBase: './dist',
+    client: {
+      logging: 'error',
+      overlay: true,
+      progress: true
+    },
     port: 9100
   },
   mode,
@@ -54,7 +58,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Component Interaction - Events - Forwarding - With'
+      title: ''
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
