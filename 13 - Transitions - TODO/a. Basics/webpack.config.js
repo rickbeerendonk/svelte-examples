@@ -63,7 +63,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: 'public/**/*',
+          from: 'public',
           globOptions: {
             ignore: '**/index.html'
           },
