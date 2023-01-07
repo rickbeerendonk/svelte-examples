@@ -1,6 +1,9 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
+const fs = require('fs');
+const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -15,9 +18,9 @@ module.exports = {
     extensions: ['.mjs', '.js', '.svelte']
   },
   output: {
-    path: __dirname + '/dist',
-    filename: '[name].js',
-    chunkFilename: '[name].[id].js'
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].[fullhash:8].js',
+    chunkFilename: '[name].[id].[fullhash:8].js'
   },
   devtool: prod ? false : 'source-map',
   devServer: {
@@ -57,9 +60,25 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'public',
+          globOptions: {
+            ignore: '**/index.html'
+          },
+          noErrorOnMissing: true
+        }
+      ]
+    }),
     new HtmlWebpackPlugin({
-      title:
-        'Stores - Derived - Async (using Set) - With Calculated Initial Value'
+      // Use template if "/public/index.html" file exists
+      ...(fs.existsSync('./public/index.html')
+        ? { template: './public/index.html' }
+        : {}),
+      title: __dirname
+        .substring(__dirname.indexOf('examples') + 'examples'.length + 1)
+        .replaceAll(/[\\|/]/g, ' - ')
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
