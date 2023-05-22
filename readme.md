@@ -1,6 +1,6 @@
 # Svelte Examples
 
-Examples for [Svelte](https://svelte.technology/).
+Examples for [Svelte](https://svelte.dev/).
 
 ![](https://img.shields.io/github/license/rickbeerendonk/svelte-examples.svg)
 
@@ -15,7 +15,7 @@ To open examples you'll need to install various libraries:
 
 Download:
 
-- [Chrome](https://chrome.google.com/webstore/detail/svelte-devtools/ckolcbmkjpjmangdbmnkpjigpkddpogn)
+- [Chrome](https://chromewebstore.google.com/detail/svelte-devtools/kfidecgcdjjfpeckbblhmfkhmlgecoff)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/svelte-devtools/)
 
 ## Licence
@@ -24,4 +24,4 @@ European Union Public Licence version 1.2
 
 ## Copyright
 
-Copyright © 2019-2020 Rick Beerendonk
+Copyright © 2019-2024 Rick Beerendonk
