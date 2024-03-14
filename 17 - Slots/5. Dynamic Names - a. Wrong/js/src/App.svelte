@@ -1,5 +1,5 @@
 <script>
-  import Container from './Container';
+  import Container from './Container.svelte';
 
   let name1 = 'first';
   let name2 = 'second';

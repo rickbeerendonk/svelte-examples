@@ -1,5 +1,5 @@
 <script>
-  import Container from './Container';
+  import Container from './Container.svelte';
 </script>
 
 <Container><em>First</em></Container>
