@@ -1,5 +1,5 @@
 <script>
-  import Hello from './components/Hello';
+  import Hello from './components/Hello.svelte';
 
   let showComponent = true;
   let name = 'A';
