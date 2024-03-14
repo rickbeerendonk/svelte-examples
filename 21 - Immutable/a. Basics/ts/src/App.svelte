@@ -1,6 +1,6 @@
 <script>
-  import ComponentMutable from './ComponentMutable';
-  import ComponentImmutable from './ComponentImmutable';
+  import ComponentMutable from './ComponentMutable.svelte';
+  import ComponentImmutable from './ComponentImmutable.svelte';
 
   let name = 'Svelte';
   let objWrong = { name };

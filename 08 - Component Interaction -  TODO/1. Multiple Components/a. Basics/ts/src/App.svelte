@@ -1,6 +1,6 @@
 <script>
-  import ComponentA from './ComponentA';
-  import ComponentB from './ComponentB';
+  import ComponentA from './ComponentA.svelte';
+  import ComponentB from './ComponentB.svelte';
 </script>
 
 <h1>App</h1>

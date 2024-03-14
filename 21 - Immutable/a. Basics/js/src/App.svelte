@@ -1,6 +1,6 @@
 <script>
-  import ComponentMutable from './ComponentMutable';
-  import ComponentImmutable from './ComponentImmutable';
+  import ComponentMutable from './ComponentMutable.svelte';
+  import ComponentImmutable from './ComponentImmutable.svelte';
 
   let name = 'Svelte';
   let objWrong = { name };
@@ -14,7 +14,7 @@
 </script>
 
 <h1>App</h1>
-<input autofocus value={name} on:input={handleInput} />
+<input value={name} on:input={handleInput} />
 <p class="comment">
   Observe that the immutable component is optimised and doesn't expect changes
   within objects, unless you replace the whole object.
