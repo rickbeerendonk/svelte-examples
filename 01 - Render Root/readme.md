@@ -5,9 +5,7 @@
 A svelte component is a self-contained reusable combination of HTML, CSS and JS code. Components are written in `.svelte` files.
 
 ```svelte
-<main>
-  <h1>Hello Svelte!</h1>
-</main>
+<h1>Hello Svelte!</h1>
 ```
 
 ## Root Component Creation
