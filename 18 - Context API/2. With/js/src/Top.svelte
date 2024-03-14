@@ -1,7 +1,7 @@
 <script>
   import { setContext } from 'svelte';
-  import colorContext from './color-context';
-  import Middle from './Middle';
+  import colorContext from './color-context.js';
+  import Middle from './Middle.svelte';
 
   export let color;
 

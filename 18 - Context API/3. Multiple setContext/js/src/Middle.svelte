@@ -1,7 +1,7 @@
 <script>
   import { setContext } from 'svelte';
   import colorContext from './color-context';
-  import Bottom from './Bottom';
+  import Bottom from './Bottom.svelte';
 
   setContext(colorContext, { color: 'green' });
 </script>

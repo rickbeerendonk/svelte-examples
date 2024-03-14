@@ -1,5 +1,5 @@
 <script>
-  import Middle from './Middle';
+  import Middle from './Middle.svelte';
 
   export let color;
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import Bottom from './Bottom';
+  import Bottom from './Bottom.svelte';
 
   export let color;
 </script>
