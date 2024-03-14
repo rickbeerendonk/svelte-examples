@@ -3,12 +3,6 @@
   let visible = true;
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">
   Open the console. Click the button multiple times and see only intervals are
   started and never stopped. An interval is 5 seconds, but see the effect if you
@@ -23,3 +17,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

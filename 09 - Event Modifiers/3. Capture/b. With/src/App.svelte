@@ -27,16 +27,6 @@
   }
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-
-  .result {
-    color: lightgray;
-  }
-</style>
-
 <p class="comment">
   Observe that when clicking the child, the parent's
   <b> <u>on:click|capture</u> </b>
@@ -47,7 +37,8 @@
   id="parent"
   on:click|capture={parentCapturingClicked}
   on:click|self={parentAtTargetClicked}
-  on:click={parentBubblingClicked}>
+  on:click={parentBubblingClicked}
+>
   Parent
   <div id="child" on:click={childClicked}>Child</div>
 </div>
@@ -60,3 +51,13 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+
+  .result {
+    color: lightgray;
+  }
+</style>

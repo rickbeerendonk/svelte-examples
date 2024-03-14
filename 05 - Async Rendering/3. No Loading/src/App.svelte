@@ -7,12 +7,6 @@
   });
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">No UI while we wait for the promise to resolve:</p>
 {#await promise then name}
   <h1>Hello {name}!</h1>
@@ -20,3 +14,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

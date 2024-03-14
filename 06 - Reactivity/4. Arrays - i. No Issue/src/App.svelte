@@ -7,12 +7,6 @@
   }
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">
   Observe that clicking does update the array. As long as the array variable
   name is on the left side of the assignment, reactivity works.
@@ -22,3 +16,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

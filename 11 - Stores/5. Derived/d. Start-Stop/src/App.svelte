@@ -2,12 +2,6 @@
   import { frequency, tick } from './stores';
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">
   Open the console. Observe the Derived Store's Interval is started and stopped
   on every dependency change.
@@ -20,3 +14,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

@@ -4,7 +4,7 @@
 
   let count = 0;
 
-  storeCount.subscribe((value) => (count = value));
+  storeCount.subscribe(value => (count = value));
 </script>
 
 <Child />

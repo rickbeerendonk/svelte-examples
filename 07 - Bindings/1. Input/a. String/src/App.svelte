@@ -8,7 +8,7 @@
 
 <label>
   Two way (long):
-  <input value={name} on:input={(e) => (name = e.target.value)} />
+  <input value={name} on:input={e => (name = e.target.value)} />
 </label>
 
 <br />

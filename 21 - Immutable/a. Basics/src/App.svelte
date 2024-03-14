@@ -13,12 +13,6 @@
   }
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <h1>App</h1>
 <input autofocus value={name} on:input={handleInput} />
 <p class="comment">
@@ -30,3 +24,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

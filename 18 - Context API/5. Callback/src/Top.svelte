@@ -27,12 +27,6 @@
   setContext(colorContext, { setChangeCallback, handleSwitch });
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <Middle />
 <p class="comment">
   Observe that the button DOES work, because we use callbacks to circumvent the
@@ -41,3 +35,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

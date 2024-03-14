@@ -8,12 +8,6 @@
   }
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">
   Observe that clicking does update the object. As long as the object variable
   name is on the left side of the assignment, reactivity works.
@@ -23,3 +17,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

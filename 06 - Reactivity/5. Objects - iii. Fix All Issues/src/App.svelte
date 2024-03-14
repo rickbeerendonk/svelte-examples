@@ -14,15 +14,15 @@
   }
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">Observe that clicking does update the object.</p>
 <button on:click={handleClick}>Change object</button>
 <p>{JSON.stringify(obj)}</p>
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

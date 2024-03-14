@@ -16,6 +16,18 @@
   }
 </script>
 
+<h1
+  class="static"
+  class:dynamic1={isDynamic1}
+  class:dynamic2={isDynamic2}
+  on:click={updateDynamic}
+>
+  Hello Svelte!
+</h1>
+
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <style>
   .static {
     color: red;
@@ -29,14 +41,3 @@
     font-variant: small-caps;
   }
 </style>
-
-<h1
-  class="static"
-  class:dynamic1={isDynamic1}
-  class:dynamic2={isDynamic2}
-  on:click={updateDynamic}>
-  Hello Svelte!
-</h1>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->

@@ -28,5 +28,5 @@ export const time = derived(
   // Store(s)
   date,
   // Value calculation
-  ($date) => $date.toLocaleTimeString()
+  $date => $date.toLocaleTimeString()
 );

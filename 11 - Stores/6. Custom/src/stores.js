@@ -7,8 +7,8 @@ function createCount() {
 
   return {
     subscribe,
-    inc: () => update((value) => value + 1),
-    dec: (delta = 1) => update((value) => value - delta),
+    inc: () => update(value => value + 1),
+    dec: (delta = 1) => update(value => value - delta),
     reset: () => set(initial)
   };
 }

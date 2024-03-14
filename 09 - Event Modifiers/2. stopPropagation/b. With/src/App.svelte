@@ -17,16 +17,6 @@
   }
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-
-  .result {
-    color: lightgray;
-  }
-</style>
-
 <p class="comment">
   Observe that when clicking the child, the parent's on:click handler IS NOT
   triggered, but the second child handler IS triggered.
@@ -37,7 +27,8 @@
   <div
     id="child"
     on:click|stopPropagation={childClicked}
-    on:click|self={childSelfClicked}>
+    on:click|self={childSelfClicked}
+  >
     Child
   </div>
 </div>
@@ -50,3 +41,13 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+
+  .result {
+    color: lightgray;
+  }
+</style>

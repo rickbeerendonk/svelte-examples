@@ -7,12 +7,6 @@
   }, 1000);
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">
   Open the console to see &#123;@debug ...&#125; hitting breakpoints are logging
   to the console.
@@ -26,3 +20,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

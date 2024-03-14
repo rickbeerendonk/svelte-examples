@@ -11,21 +11,15 @@
     if (selectedLanguage) {
       selectedComponent = Loading;
       import(`./components/Greeting${selectedLanguage}.svelte`)
-        .then((module) => {
+        .then(module => {
           selectedComponent = module.default;
         })
-        .catch((err) => {
+        .catch(err => {
           selectedComponent = Error;
         });
     }
   }
 </script>
-
-<style>
-  #result {
-    background: bisque;
-  }
-</style>
 
 {#each languages as language}
   <label>
@@ -41,3 +35,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  #result {
+    background: bisque;
+  }
+</style>

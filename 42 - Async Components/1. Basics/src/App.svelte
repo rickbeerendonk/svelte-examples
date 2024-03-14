@@ -6,20 +6,12 @@
 
   $: {
     if (selectedLanguage) {
-      import(`./components/Greeting${selectedLanguage}.svelte`).then(
-        (module) => {
-          selectedComponent = module.default;
-        }
-      );
+      import(`./components/Greeting${selectedLanguage}.svelte`).then(module => {
+        selectedComponent = module.default;
+      });
     }
   }
 </script>
-
-<style>
-  #result {
-    background: bisque;
-  }
-</style>
 
 {#each languages as language}
   <label>
@@ -35,3 +27,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  #result {
+    background: bisque;
+  }
+</style>

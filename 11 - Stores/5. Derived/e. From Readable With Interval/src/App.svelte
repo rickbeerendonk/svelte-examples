@@ -3,12 +3,6 @@
   let visible = true;
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">
   This example demonstrates that if all subscriptions to a derived store are
   unsubscribed, that the derived store is unsubscribing from its sources as
@@ -29,3 +23,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

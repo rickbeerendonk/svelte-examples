@@ -13,16 +13,6 @@
   }
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-
-  .result {
-    color: lightgray;
-  }
-</style>
-
 <p class="comment">
   Observe that when clicking the child repeatedly, the parent's on:click|capture
   handler is triggered ONCE BEFORE the child.
@@ -41,3 +31,13 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+
+  .result {
+    color: lightgray;
+  }
+</style>

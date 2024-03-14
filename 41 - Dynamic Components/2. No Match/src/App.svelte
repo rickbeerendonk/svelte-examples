@@ -12,12 +12,6 @@
   let selectedLanguage = null;
 </script>
 
-<style>
-  #result {
-    background: bisque;
-  }
-</style>
-
 {#each languages as language}
   <label>
     <input bind:group={selectedLanguage} type="radio" value={language} />
@@ -28,8 +22,15 @@
 <div id="result">
   <!-- If this is falsy, no component is shown -->
   <svelte:component
-    this={selectedLanguage ? selectedLanguage.component : null} />
+    this={selectedLanguage ? selectedLanguage.component : null}
+  />
 </div>
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  #result {
+    background: bisque;
+  }
+</style>

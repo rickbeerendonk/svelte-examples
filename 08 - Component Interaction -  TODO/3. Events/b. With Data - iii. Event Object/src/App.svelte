@@ -9,12 +9,6 @@
   }
 </script>
 
-<style>
-  .remark {
-    color: gray;
-  }
-</style>
-
 <div>
   <Child on:change={greetingChanged} />
   <h1>Event Object</h1>
@@ -31,3 +25,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .remark {
+    color: gray;
+  }
+</style>

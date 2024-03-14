@@ -8,12 +8,6 @@
   }
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <p class="comment">
   Observe that clicking doesn't update the number (reflection of an internal
   array length). Open the console to see the real array length (proof of it's
@@ -23,3 +17,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>

@@ -5,13 +5,6 @@ In JS you can add multiline strings in attributes.
 So in Svelte use bind:value={} instead.`;
 </script>
 
-<style>
-  textarea {
-    height: 4rem;
-    width: 25rem;
-  }
-</style>
-
 <label>
   Without binding:
   <br />
@@ -30,3 +23,10 @@ So in Svelte use bind:value={} instead.`;
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  textarea {
+    height: 4rem;
+    width: 25rem;
+  }
+</style>

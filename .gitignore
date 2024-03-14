@@ -2,11 +2,21 @@
 ## Svelte Examples
 ##################
 
+build/
 dist-storybook/
 dist/
+dist-ssr/
 lib/
+package/
 Issues/
 temp/
+tmp/
+.svelte-kit/
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
 
 #################
 ## npm

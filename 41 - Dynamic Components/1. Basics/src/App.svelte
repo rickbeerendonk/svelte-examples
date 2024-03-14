@@ -17,13 +17,6 @@
   })();
 </script>
 
-<style>
-  #result {
-    padding: 4px;
-    background: lightgray;
-  }
-</style>
-
 <label>
   <input bind:group={language} type="radio" value="dutch" />
   Dutch
@@ -43,3 +36,10 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  #result {
+    padding: 4px;
+    background: lightgray;
+  }
+</style>

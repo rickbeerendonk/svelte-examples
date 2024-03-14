@@ -5,7 +5,7 @@
   let color = 'black';
 
   let { setChangeCallback } = getContext(colorContext);
-  setChangeCallback((value) => (color = value));
+  setChangeCallback(value => (color = value));
 </script>
 
 <h1 style={`color: ${color}`}>Bottom</h1>

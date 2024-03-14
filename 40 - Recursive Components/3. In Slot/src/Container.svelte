@@ -2,18 +2,6 @@
   let recursive = false;
 </script>
 
-<style>
-  .container {
-    background-color: lightgray;
-    padding: 10px;
-  }
-
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-</style>
-
 <h1 on:click={() => (recursive = true)}>Hello World!</h1>
 {#if recursive}
   <div class="container">
@@ -26,3 +14,15 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .container {
+    background-color: lightgray;
+    padding: 10px;
+  }
+
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+</style>

@@ -6,17 +6,15 @@
     "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["svelte3", "prettier"],
-  "overrides": [
-    {
-      "files": ["**/*.svelte"],
-      "processor": "svelte3/svelte3"
-    }
+  "plugins": ["svelte", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:svelte/recommended"
   ],
-  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
   "rules": {
     "no-debugger": 1,
     "semi": [2, "always"]

@@ -12,12 +12,6 @@
   setContext(colorContext, { color });
 </script>
 
-<style>
-  .comment {
-    color: gray;
-  }
-</style>
-
 <Middle />
 <button on:click={handleSwitch}>Switch color</button>
 <p class="comment">
@@ -26,3 +20,9 @@
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
+
+<style>
+  .comment {
+    color: gray;
+  }
+</style>
