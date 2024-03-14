@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Child from './Child.svelte';
 
   let count = 0;

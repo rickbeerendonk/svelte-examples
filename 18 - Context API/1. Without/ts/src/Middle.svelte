@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Bottom from './Bottom.svelte';
 
   export let color;

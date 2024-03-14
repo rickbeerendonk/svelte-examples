@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { name as storeName } from './stores';
 
   let name = 0;

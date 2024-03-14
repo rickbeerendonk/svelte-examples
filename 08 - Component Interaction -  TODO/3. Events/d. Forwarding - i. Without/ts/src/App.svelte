@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Top from './Top.svelte';
 
   let count = 0;

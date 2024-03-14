@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let arr = [1, 2];
 
   function handleClick() {

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { name } from './stores';
 
   function changed(e) {

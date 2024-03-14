@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let count = 0; // Will NOT become more than 1
 </script>
 

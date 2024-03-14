@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Middle from './Middle.svelte';
 
   export let color;

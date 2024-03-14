@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import GreetingDutch from './components/GreetingDutch';
   import GreetingEnglish from './components/GreetingEnglish';
   import GreetingSpanish from './components/GreetingSpanish';

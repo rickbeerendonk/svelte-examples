@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Bottom from './Bottom.svelte';
   import { createEventDispatcher } from 'svelte';
 

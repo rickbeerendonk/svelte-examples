@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { tweened } from 'svelte/motion';
 
   let count1 = tweened(0);

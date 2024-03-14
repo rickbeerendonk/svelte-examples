@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Child_Get from './Child_Get.svelte';
 
   let visible = true;

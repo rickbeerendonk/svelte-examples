@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   const items = ['one', 'two', 'three'];
 </script>
 

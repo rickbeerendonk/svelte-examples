@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Greeting from './Greeting';
   import MouseMove from './MouseMove';
 </script>

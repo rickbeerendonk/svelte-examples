@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { afterUpdate, beforeUpdate, onDestroy, onMount, tick } from 'svelte';
   import { logEvent } from '../utils.js';
 

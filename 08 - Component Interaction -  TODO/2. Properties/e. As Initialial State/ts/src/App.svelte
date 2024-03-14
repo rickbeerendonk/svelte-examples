@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let count;
 
   let items = [...Array(count).keys()];

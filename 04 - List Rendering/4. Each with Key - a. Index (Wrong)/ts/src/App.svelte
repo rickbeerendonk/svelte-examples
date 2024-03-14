@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let items = ['one', 'two', 'three'];
   let itemId = 4;
 

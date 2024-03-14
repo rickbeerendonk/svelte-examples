@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import ComponentA from './ComponentA.svelte';
   import ComponentB from './ComponentB.svelte';
 </script>

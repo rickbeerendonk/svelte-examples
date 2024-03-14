@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   const items = new Set(['A', 'B', 'C']);
 </script>
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { getContext } from 'svelte';
   import colorContext from './color-context';
   import Bottom from './Bottom.svelte';

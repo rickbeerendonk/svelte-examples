@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   function handleClick(e) {
     alert(`Event handled.
       Target: ${e.target}`);

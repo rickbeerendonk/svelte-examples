@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   // Guaranteed to successfully resolve
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {

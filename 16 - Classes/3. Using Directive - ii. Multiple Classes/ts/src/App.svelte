@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let isDynamic1 = false;
   let isDynamic2 = false;
 

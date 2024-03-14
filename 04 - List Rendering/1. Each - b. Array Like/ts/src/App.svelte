@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   // Array like = Has length property.
   const items = 'items';
 </script>

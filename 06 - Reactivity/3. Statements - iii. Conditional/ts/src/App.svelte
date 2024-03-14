@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let count = 0;
   $: if (count > 0 && !(count % 2)) {
     // Alert every even number, except for 0

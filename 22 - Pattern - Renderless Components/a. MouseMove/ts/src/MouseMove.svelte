@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let mousePosition = {
     x: undefined,
     y: undefined

@@ -1,6 +1,6 @@
 <svelte:options immutable={true} />
 
-<script>
+<script lang="ts">
   export let objWrong;
   export let objCorrect;
 </script>

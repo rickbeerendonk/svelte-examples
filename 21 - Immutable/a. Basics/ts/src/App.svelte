@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import ComponentMutable from './ComponentMutable.svelte';
   import ComponentImmutable from './ComponentImmutable.svelte';
 

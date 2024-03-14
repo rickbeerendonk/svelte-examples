@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Child_Subscribe from './Child_Subscribe';
   let visible = true;
 </script>

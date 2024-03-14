@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Child from './Child.svelte';
   import { count as storeCount } from './stores';
 

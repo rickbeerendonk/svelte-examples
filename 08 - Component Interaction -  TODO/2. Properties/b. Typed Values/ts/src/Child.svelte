@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let boolProp;
   export let numberProp;
   export let stringProp;

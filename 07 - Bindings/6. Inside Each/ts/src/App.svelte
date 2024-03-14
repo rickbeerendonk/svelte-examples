@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let items = [0, 0, 0];
 </script>
 

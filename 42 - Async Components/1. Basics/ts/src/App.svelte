@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   const languages = ['Dutch', 'English', 'Spanish'];
 
   let selectedLanguage = null;

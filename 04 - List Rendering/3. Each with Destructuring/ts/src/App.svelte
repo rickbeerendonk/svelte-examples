@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   const persons = [
     { name: 'Alexandra', age: 35 },
     { name: 'Benjamin', age: 21 },

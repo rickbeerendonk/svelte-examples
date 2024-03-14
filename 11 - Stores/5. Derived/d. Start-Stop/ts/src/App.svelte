@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { frequency, tick } from './stores';
 </script>
 

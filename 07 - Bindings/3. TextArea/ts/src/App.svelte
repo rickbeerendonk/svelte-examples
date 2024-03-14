@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let text = `HTML doesn't support multiple lines in attributes.
 Therefor place content between opening and closing tag.
 In JS you can add multiline strings in attributes.

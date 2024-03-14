@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Hello from './components/Hello.svelte';
 
   let showComponent = true;

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let obj = { prop1: true, prop2: 'two', prop3: 0 };
 
   function handleClick() {

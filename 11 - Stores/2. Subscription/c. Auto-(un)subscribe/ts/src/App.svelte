@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Child_Set from './Child_Set.svelte';
   import Child_Subscribe from './Child_Subscribe.svelte';
 

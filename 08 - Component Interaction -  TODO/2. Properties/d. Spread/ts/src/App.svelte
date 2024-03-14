@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Greeting from './Greeting';
 
   const props = {
