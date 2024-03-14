@@ -13,10 +13,10 @@ A svelte component is a self-contained reusable combination of HTML, CSS and JS 
 The root component is created and exported form a JavaScript module. The root component will be added to an element in the HTML page. This element is passed during creation of the component using the target property.
 
 ```js
-import App from './App';
+import App from './App.svelte';
 
 const app = new App({
-  target: document.body
+  target: document.getElementById('app')
 });
 
 export default app;
