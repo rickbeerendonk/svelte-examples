@@ -1,5 +1,14 @@
 {
+  "editor.formatOnSave": true,
   "editor.tabSize": 2,
+
+  // Enable ESLint
+  "eslint.enable": true,
   "eslint.validate": ["javascript", "svelte"],
-  "svelte.plugin.typescript.enable": false
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
 }

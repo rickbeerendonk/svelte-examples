@@ -1,8 +1,7 @@
 {
-  "root": true,
   "env": {
     "browser": true,
-    "es6": true,
+    "es2021": true,
     "node": true
   },
   "parserOptions": {
@@ -13,7 +12,14 @@
   "extends": [
     "eslint:recommended",
     "plugin:prettier/recommended",
-    "plugin:svelte/recommended"
+    "plugin:svelte/recommended",
+    "plugin:svelte/prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["*.svelte"],
+      "processor": "svelte/svelte"
+    }
   ],
   "rules": {
     "no-debugger": 1,
