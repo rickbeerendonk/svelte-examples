@@ -1,13 +1,14 @@
-<script lang="ts">
+<script>
   import { setContext } from 'svelte';
-  import colorContext from './color-context';
   import Middle from './Middle.svelte';
 
   let color = 'red';
   let changeCallback = null;
 
   function notifyChange() {
-    if (changeCallback) changeCallback(color);
+    if (changeCallback) {
+      changeCallback(color);
+    }
   }
 
   function setColor(value) {
@@ -24,13 +25,13 @@
     setColor(color === 'red' ? 'blue' : 'red');
   }
 
-  setContext(colorContext, { setChangeCallback, handleSwitch });
+  setContext('color', { setChangeCallback });
 </script>
 
 <Middle />
+<button on:click={handleSwitch}>Switch color</button>
 <p class="comment">
-  Observe that the button DOES work, because we use callbacks to circumvent the
-  reactivity issue.
+  Observe that the button DOES NOT work, because a context is not reactive.
 </p>
 
 <!-- European Union Public License version 1.2 -->
