@@ -4,7 +4,7 @@
 import Top from './Top.svelte';
 
 const app = new Top({
-  target: document.body,
+  target: document.getElementById('app'),
   props: {
     color: 'red'
   }
