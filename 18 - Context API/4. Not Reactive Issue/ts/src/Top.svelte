@@ -1,6 +1,5 @@
-<script lang="ts">
+<script>
   import { setContext } from 'svelte';
-  import colorContext from './color-context';
   import Middle from './Middle.svelte';
 
   let color = 'red';
@@ -9,7 +8,7 @@
     color = color === 'red' ? 'green' : 'red';
   }
 
-  setContext(colorContext, { color });
+  setContext('color', { color });
 </script>
 
 <Middle />
