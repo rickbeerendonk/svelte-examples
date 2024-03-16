@@ -1,13 +1,45 @@
 <!doctype html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk          -->
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid gray;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+
+    <h1>Lifecycle Hooks</h1>
+    <ol id="events"></ol>
+    <table id="result">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Hook</th>
+          <th>Props</th>
+          <th>State</th>
+          <th>DOM</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </body>
 </html>
