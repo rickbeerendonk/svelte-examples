@@ -1,13 +1,14 @@
 <script>
   import { setContext } from 'svelte';
-  import colorContext from './color-context';
   import Middle from './Middle.svelte';
 
   let color = 'red';
   let changeCallback = null;
 
   function notifyChange() {
-    if (changeCallback) changeCallback(color);
+    if (changeCallback) {
+      changeCallback(color);
+    }
   }
 
   function setColor(value) {
@@ -24,7 +25,7 @@
     setColor(color === 'red' ? 'green' : 'red');
   }
 
-  setContext(colorContext, { setChangeCallback, handleSwitch });
+  setContext('color', { setChangeCallback, handleSwitch });
 </script>
 
 <Middle />

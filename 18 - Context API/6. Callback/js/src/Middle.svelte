@@ -1,9 +1,8 @@
 <script>
   import { getContext } from 'svelte';
-  import colorContext from './color-context';
   import Bottom from './Bottom.svelte';
 
-  let { handleSwitch } = getContext(colorContext);
+  let { handleSwitch } = getContext('color');
 </script>
 
 <Bottom />
