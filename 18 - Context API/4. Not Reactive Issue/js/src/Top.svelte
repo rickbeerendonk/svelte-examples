@@ -5,7 +5,7 @@
   let color = 'red';
 
   function handleSwitch() {
-    color = color === 'red' ? 'green' : 'red';
+    color = color === 'red' ? 'blue' : 'red';
   }
 
   setContext('color', { color });

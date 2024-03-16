@@ -21,7 +21,7 @@
   }
 
   function handleSwitch() {
-    setColor(color === 'red' ? 'green' : 'red');
+    setColor(color === 'red' ? 'blue' : 'red');
   }
 
   setContext(colorContext, { setChangeCallback, handleSwitch });
