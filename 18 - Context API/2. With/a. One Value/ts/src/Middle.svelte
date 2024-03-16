@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import Bottom from './Bottom.svelte';
 </script>
 

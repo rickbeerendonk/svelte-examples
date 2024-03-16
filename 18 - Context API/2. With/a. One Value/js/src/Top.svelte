@@ -1,11 +1,11 @@
-<script lang="ts">
+<script>
   import { setContext } from 'svelte';
-  import colorContext from './color-context';
   import Middle from './Middle.svelte';
 
   export let color;
 
-  setContext(colorContext, { color });
+  // Not reactive
+  setContext('color', color);
 </script>
 
 <Middle />
