@@ -2,7 +2,7 @@
   import Child from './Child.svelte';
   import { name as storeName } from './stores';
 
-  let name = 0;
+  let name: string = '';
 
   storeName.subscribe(value => (name = value));
 </script>
