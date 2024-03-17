@@ -1,7 +1,7 @@
 <script lang="ts">
-  import GreetingDutch from './components/GreetingDutch';
-  import GreetingEnglish from './components/GreetingEnglish';
-  import GreetingSpanish from './components/GreetingSpanish';
+  import GreetingDutch from './components/GreetingDutch.svelte';
+  import GreetingEnglish from './components/GreetingEnglish.svelte';
+  import GreetingSpanish from './components/GreetingSpanish.svelte';
 
   const languages = [
     { name: 'dutch', component: GreetingDutch },
