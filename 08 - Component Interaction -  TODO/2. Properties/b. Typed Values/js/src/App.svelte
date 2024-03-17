@@ -1,5 +1,5 @@
 <script>
-  import Child from './Child';
+  import Child from './Child.svelte';
 </script>
 
 <Child boolProp={true} numberProp={123} stringProp="text" />
