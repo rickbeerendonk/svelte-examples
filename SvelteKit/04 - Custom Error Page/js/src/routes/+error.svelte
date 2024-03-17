@@ -10,4 +10,7 @@
 <ul>
   <li>Status: {$page.status}</li>
   <li>Error Message: {$page.error.message}</li>
+  <li>URL: {$page.url}</li>
+  <li></li>
+  <li>Raw: {JSON.stringify($page)}</li>
 </ul>
