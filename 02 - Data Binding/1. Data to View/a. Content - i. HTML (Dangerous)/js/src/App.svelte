@@ -1,8 +1,10 @@
 <script>
   let name = '<u>Svelte</u>';
+  //let name = '<u onmouseover=alert("Hacked!")>Dangerous</u>';
 </script>
 
 <h1>
+  <!-- Sanitize before using {@html} -->
   Escaping: Hello
   {@html name}
   !
