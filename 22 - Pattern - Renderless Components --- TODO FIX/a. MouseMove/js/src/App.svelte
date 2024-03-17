@@ -1,6 +1,6 @@
 <script>
-  import Greeting from './Greeting';
-  import MouseMove from './MouseMove';
+  import Greeting from './Greeting.svelte';
+  import MouseMove from './Greeting.svelte';
 </script>
 
 <MouseMove let:mousePosition={{ x, y }}>
