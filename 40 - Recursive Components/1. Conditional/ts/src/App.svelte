@@ -2,7 +2,9 @@
   let recursive = false;
 </script>
 
-<h1 on:click={() => (recursive = true)}>Hello World!</h1>
+<button on:click={() => (recursive = true)} disabled={recursive}>
+  Hello World!
+</button>
 {#if recursive}
   <svelte:self />
 {/if}

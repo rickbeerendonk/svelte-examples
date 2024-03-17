@@ -13,9 +13,10 @@
 </p>
 
 <!-- @debug is in a template what console.log() + debugger is in JavaScript -->
+<!-- Will not work with properties of objects or array entries -->
 {@debug count, time}
 
-<h1 on:click={() => count++}>This has been clicked {count} times!</h1>
+<button on:click={() => count++}>This has been clicked {count} times!</button>
 <h2>{time}</h2>
 
 <!-- European Union Public License version 1.2 -->

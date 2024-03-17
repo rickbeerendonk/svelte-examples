@@ -16,8 +16,8 @@
   }
 </script>
 
-<h1 on:click={handleClick1}>This has been clicked {$count1} times!</h1>
-<h1 on:click={handleClick2}>This has been clicked {$count2} times!</h1>
+<button on:click={handleClick1}>This has been clicked {$count1} times!</button>
+<button on:click={handleClick2}>This has been clicked {$count2} times!</button>
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->

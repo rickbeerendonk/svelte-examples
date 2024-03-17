@@ -13,7 +13,8 @@
   array length). Open the console to see the real array length (proof of it's
   update).
 </p>
-<h1 on:click={handleClick}>This has been clicked {arr.length} items!</h1>
+<button on:click={handleClick}>This has been clicked {arr.length} items!</button
+>
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->

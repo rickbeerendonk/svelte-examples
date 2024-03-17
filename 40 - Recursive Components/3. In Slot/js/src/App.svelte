@@ -1,7 +1,5 @@
 <script>
   import Container from './Container.svelte';
-
-  let recursive = false;
 </script>
 
 <Container>

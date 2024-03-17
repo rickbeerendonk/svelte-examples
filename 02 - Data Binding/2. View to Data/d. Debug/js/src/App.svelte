@@ -4,6 +4,7 @@
   let count = 0;
 </script>
 
+<!-- @debug is in a template what console.log() + debugger is in JavaScript -->
 <!-- Will not work with properties of objects or array entries -->
 {@debug count}
 

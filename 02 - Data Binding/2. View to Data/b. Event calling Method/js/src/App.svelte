@@ -5,7 +5,7 @@
   }
 </script>
 
-<h1 on:click={handleClick}>Hello World!</h1>
+<button on:click={handleClick}>Hello World!</button>
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
