@@ -5,8 +5,8 @@
   const items = new Set(['A', 'B', 'C']);
 </script>
 
-<ol>
-  {#each items as item, index}
-    <li value={index}>{item}</li>
+<ul>
+  {#each items as item}
+    <li>{item}</li>
   {/each}
-</ol>
+</ul>
