@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import { setContext } from 'svelte';
   import Middle from './Middle.svelte';
@@ -16,9 +19,6 @@
 <p class="comment">
   Observe that the button DOES NOT work, because a context is not reactive.
 </p>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .comment {
