@@ -22,6 +22,8 @@
   triggered.
 </p>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div id="parent" on:click|self={parentSelfClicked}>
   Parent
   <div id="child" on:click={childClicked} on:click|self={childSelfClicked}>
