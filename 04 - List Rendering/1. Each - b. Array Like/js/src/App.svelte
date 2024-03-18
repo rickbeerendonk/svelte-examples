@@ -1,6 +1,9 @@
 <script>
-  // Array like = Has length property.
-  const items = 'items';
+  // Array = Has length property
+  // Array like = Has no length property (iterable)
+
+  //const items = 'items';
+  const items = new Set([1, 2, 3]);
 </script>
 
 <ul>
