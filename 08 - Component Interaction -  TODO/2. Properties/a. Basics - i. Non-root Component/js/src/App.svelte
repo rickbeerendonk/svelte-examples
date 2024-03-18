@@ -1,5 +1,5 @@
 <script>
-  import Greeting from './Greeting';
+  import Greeting from './Greeting.svelte';
 </script>
 
 <Greeting name="Svelte" />

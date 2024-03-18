@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Greeting from './Greeting';
+  import Greeting from './Greeting.svelte';
 </script>
 
 <Greeting name="Svelte" />
