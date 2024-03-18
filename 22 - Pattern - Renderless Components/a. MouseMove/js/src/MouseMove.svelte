@@ -11,7 +11,7 @@
 
 <svelte:window on:mousemove={handleMouseMove} />
 
-<span let:mousePosition>
+<span>
   <slot {mousePosition} />
 </span>
 
