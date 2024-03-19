@@ -1,16 +1,16 @@
 <script>
   import Child from './Child.svelte';
 
-  let greetingText = 'World';
+  let name = 'World';
 
-  function greetingChanged(e) {
-    greetingText = e.detail;
+  function nameChanged(e) {
+    name = e.detail;
   }
 </script>
 
 <div>
-  <Child name={greetingText} on:change={greetingChanged} />
-  <h1>Hello {greetingText}</h1>
+  <Child {name} on:change={nameChanged} />
+  <h1>Hello {name}</h1>
 </div>
 
 <!-- European Union Public License version 1.2 -->
