@@ -1,18 +1,18 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   let data = {
     source: 'Container'
   };
 </script>
 
-<div class="container" let:data>
+<div class="container">
   Normal:
   <div class="content">
     <slot {data} />
   </div>
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .container {
