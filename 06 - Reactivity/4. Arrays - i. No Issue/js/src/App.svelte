@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   let arr = [1, 2];
 
@@ -13,9 +16,6 @@
 </p>
 <button on:click={handleClick}>Change array</button>
 <p>{JSON.stringify(arr)}</p>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .comment {
