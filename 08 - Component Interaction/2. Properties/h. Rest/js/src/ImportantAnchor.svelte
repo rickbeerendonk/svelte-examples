@@ -1,5 +1,5 @@
 <script>
-  export let important;
+  export let important = '!!!';
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
