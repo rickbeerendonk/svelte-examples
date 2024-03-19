@@ -1,5 +1,5 @@
 <script>
-  import EditBox from './EditBox';
+  import EditBox from './EditBox.svelte';
   import Greeting from './Greeting.svelte';
 
   export let value;

@@ -1,5 +1,5 @@
 <script>
-  import GreetingEditor from './components/GreetingEditor';
+  import GreetingEditor from './components/GreetingEditor.svelte';
 </script>
 
 <div id="app">
