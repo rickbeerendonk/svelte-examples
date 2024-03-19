@@ -1,5 +1,5 @@
 <script>
-  function handleClick(event) {
+  function handleClick() {
     //event.preventDefault();
 
     alert('Handled in code!');
