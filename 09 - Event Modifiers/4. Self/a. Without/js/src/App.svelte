@@ -18,6 +18,8 @@
   triggered.
 </p>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div id="parent" on:click={parentClicked}>
   Parent
   <div id="child" on:click={childClicked}>Child</div>
