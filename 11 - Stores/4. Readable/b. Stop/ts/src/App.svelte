@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Child_Subscribe from './Child_Subscribe';
+  import Child_Subscribe from './Child_Subscribe.svelte';
   let visible = true;
 </script>
 
