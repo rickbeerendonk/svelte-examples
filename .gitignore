@@ -6,7 +6,6 @@ build/
 dist-storybook/
 dist/
 dist-ssr/
-lib/
 package/
 Issues/
 temp/
