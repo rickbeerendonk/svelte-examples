@@ -5,12 +5,12 @@
   let name2 = 'second';
 
   function handleSwitch() {
-    if (this.name1 === 'first') {
-      this.name1 = 'second';
-      this.name2 = 'first';
+    if (name1 === 'first') {
+      name1 = 'second';
+      name2 = 'first';
     } else {
-      this.name1 = 'first';
-      this.name2 = 'second';
+      name1 = 'first';
+      name2 = 'second';
     }
   }
 </script>
@@ -21,7 +21,7 @@
   <span slot={name2}> <b>Second</b> </span>
 </Container>
 
-<button @click="handleSwitch">Switch</button>
+<button on:click={handleSwitch}>Switch</button>
 
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
