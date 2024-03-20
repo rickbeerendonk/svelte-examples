@@ -1,5 +1,5 @@
 <script>
-  import { frequency, tick } from './stores';
+  import { frequency, tick } from './stores.js';
 </script>
 
 <p class="comment">

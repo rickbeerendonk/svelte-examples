@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { name } from './stores';
+  import { name } from './stores.js';
 
   function changed(e) {
     name.set(e.target.value);

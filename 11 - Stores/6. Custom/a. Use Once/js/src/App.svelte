@@ -1,5 +1,5 @@
 <script>
-  import { count } from './stores';
+  import { count } from './stores.js';
 
   function handleDec(delta) {
     count.dec(delta);

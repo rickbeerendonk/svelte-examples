@@ -1,5 +1,5 @@
 <script>
-  import { name } from './stores';
+  import { name } from './stores.js';
 </script>
 
 <input bind:value={$name} />

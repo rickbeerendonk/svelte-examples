@@ -1,6 +1,6 @@
 <script>
   import Child from './Child.svelte';
-  import { count as storeCount } from './stores';
+  import { count as storeCount } from './stores.js';
 
   let count = 0;
 

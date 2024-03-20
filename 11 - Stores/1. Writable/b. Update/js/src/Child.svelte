@@ -1,5 +1,5 @@
 <script>
-  import { count } from './stores';
+  import { count } from './stores.js';
 
   function buttonClicked() {
     count.update(value => value + 1);

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { nameUpperCase } from './stores';
+  import { nameUpperCase } from './stores.js';
 </script>
 
 <h1>Hello {$nameUpperCase}!</h1>

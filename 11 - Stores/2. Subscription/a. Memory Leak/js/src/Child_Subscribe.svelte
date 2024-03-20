@@ -1,5 +1,5 @@
 <script>
-  import { name as storeName } from './stores';
+  import { name as storeName } from './stores.js';
 
   let name = 0;
 

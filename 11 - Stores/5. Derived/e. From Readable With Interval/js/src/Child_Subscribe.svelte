@@ -1,5 +1,5 @@
 <script>
-  import { time } from './stores';
+  import { time } from './stores.js';
 </script>
 
 <h1>Hello {$time}!</h1>

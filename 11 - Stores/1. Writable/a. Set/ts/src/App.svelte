@@ -1,6 +1,6 @@
 <script lang="ts">
   import Child from './Child.svelte';
-  import { name as storeName } from './stores';
+  import { name as storeName } from './stores.js';
 
   let name: string = '';
 

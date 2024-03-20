@@ -1,6 +1,6 @@
 <script lang="ts">
   import { get } from 'svelte/store';
-  import { name } from './stores';
+  import { name } from './stores.js';
 </script>
 
 <h1>Hello {get(name)}!</h1>
