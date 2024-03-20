@@ -2,6 +2,7 @@
 <!-- Copyright © 2024 Rick Beerendonk          -->
 
 <script>
+  // Code from /routes/multiply/+page.svelte
   import { multiply } from '$lib/math.js';
 
   let valuesString = '';
