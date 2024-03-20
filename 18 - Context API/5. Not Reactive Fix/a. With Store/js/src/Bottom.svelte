@@ -3,10 +3,11 @@
 
   let color = 'black';
 
-  const colorCtx = getContext('color');
-  colorCtx.color.subscribe(value => {
+  const colorWritable = getContext('color');
+  colorWritable.subscribe(value => {
     color = value;
   });
+  // FIX: Add unsubscribe!
 </script>
 
 <h1 style:color>Bottom</h1>
