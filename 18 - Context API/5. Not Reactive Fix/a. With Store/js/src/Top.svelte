@@ -10,7 +10,7 @@
     color.update(value => (value === 'red' ? 'blue' : 'red'));
   }
 
-  setContext('color', { color });
+  setContext('color', color);
 </script>
 
 <Middle />
