@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import GreetingDutch from './components/GreetingDutch.svelte';
   import GreetingEnglish from './components/GreetingEnglish.svelte';
@@ -33,9 +36,6 @@
 <div id="result">
   <svelte:component this={greetingComponent} />
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   #result {
