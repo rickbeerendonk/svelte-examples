@@ -10,7 +10,7 @@ To open examples you'll need to install various libraries:
 
 1. Open command line in the root folder
 2. Run `npm install`
-3. Run `npm run dev` of `npm run dev -- --open` (to also open the browser)
+3. Run `npm run dev` or `npm run dev -- --open` (to also open the browser)
 
 ## Developer Tools
 
@@ -25,4 +25,4 @@ European Union Public Licence version 1.2
 
 ## Copyright
 
-Copyright © 2019-2024 Rick Beerendonk
+Copyright © 2019-2026 Rick Beerendonk
