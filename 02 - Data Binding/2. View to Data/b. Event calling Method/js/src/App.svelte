@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   function handleClick(e) {
     alert(`Event handled.
@@ -5,7 +8,4 @@
   }
 </script>
 
-<button on:click={handleClick}>Hello World!</button>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<button onclick={handleClick}>Hello World!</button>

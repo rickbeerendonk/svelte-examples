@@ -1,11 +1,11 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
-  function handleClick(e) {
+  function handleClick(e: MouseEvent) {
     alert(`Event handled.
       Target: ${e.target}`);
   }
 </script>
 
-<button on:click={handleClick}>Hello World!</button>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<button onclick={handleClick}>Hello World!</button>
