@@ -1,8 +1,11 @@
-<script lang="ts">
-  let show = true;
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
+<script>
+  let show = false;
 </script>
 
-{#if show}<span>Visible</span>{:else}<span>Invisible (not rendered!)</span>{/if}
+{#if show}<span>Invisible (not rendered!)</span>{:else}<span>Visible</span>{/if}
 
 <!--
   Block:
