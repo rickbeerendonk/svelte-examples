@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
   let date = new Date();
 </script>
@@ -6,6 +9,3 @@
   <p>Page loaded at: {date.toLocaleTimeString()}</p>
   <button>Submit</button>
 </form>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
