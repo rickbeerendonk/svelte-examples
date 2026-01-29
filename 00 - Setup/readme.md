@@ -18,4 +18,4 @@ npm create svelte@latest my-app
 
 ## Copyright
 
-Copyright © 2024 Rick Beerendonk
+Copyright © 2024-2026 Rick Beerendonk
