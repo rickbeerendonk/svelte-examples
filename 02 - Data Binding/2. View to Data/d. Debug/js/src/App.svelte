@@ -1,14 +1,27 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
+
 <script>
   /* eslint-disable svelte/no-at-debug-tags */
 
-  let count = 0;
+  let count = $state(0);
+  let obj = $state({ count: 0 });
+  let arr = $state([0]);
 </script>
 
 <!-- @debug is in a template what console.log() + debugger is in JavaScript -->
-<!-- Will not work with properties of objects or array entries -->
 {@debug count}
+{@debug obj}
+{@debug arr}
 
-<button on:click={() => count++}>This has been clicked {count} times!</button>
+<button onclick={() => count++}>
+  Value: This has been clicked {count} times!
+</button>
 
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2024 Rick Beerendonk -->
+<button onclick={() => obj.count++}>
+  Object: This has been clicked {obj.count} times!
+</button>
+
+<button onclick={() => arr[0]++}>
+  Array: This has been clicked {arr[0]} times!
+</button>
