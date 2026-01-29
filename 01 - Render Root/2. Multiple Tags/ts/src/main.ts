@@ -1,3 +1,6 @@
+/*! European Union Public License version 1.2 !*/
+/*! Copyright © 2020 Rick Beerendonk          !*/
+
 import { mount } from 'svelte';
 import App from './App.svelte';
 
