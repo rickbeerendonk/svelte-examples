@@ -5,7 +5,7 @@ import App from './App.svelte';
 import {} from './code';
 
 const app = new App({
-  target: document.getElementById('app')
+  target: document.getElementById('app')!
 });
 
 export default app;

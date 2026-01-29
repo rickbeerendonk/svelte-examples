@@ -1,5 +1,6 @@
 <script>
-  export let name;
+  // Svelte 5: Use $props() for component props
+  let { name } = $props();
 </script>
 
 <h1>Hello {name}!</h1>

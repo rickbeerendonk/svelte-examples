@@ -1,4 +1,6 @@
 <script>
+  // Note: Non-reactive data doesn't need $state()
+  // Use $state() only if the value will change
   let show = true;
 </script>
 

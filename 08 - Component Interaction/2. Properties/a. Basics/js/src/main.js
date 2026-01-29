@@ -1,9 +1,11 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
+// Svelte 5: Use mount() instead of new App()
+import { mount } from 'svelte';
 import App from './App.svelte';
 
-const app = new App({
+const app = mount(App, {
   target: document.getElementById('app'),
   props: {
     name: 'Svelte'

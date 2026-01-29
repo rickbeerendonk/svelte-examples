@@ -1,3 +1,5 @@
+<!-- eslint-disable svelte/require-each-key -->
+<!-- Index as key used intentionally to demonstrate the wrong approach for educational purposes -->
 <script lang="ts">
   let items = ['one', 'two', 'three'];
   let itemId = 4;

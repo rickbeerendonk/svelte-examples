@@ -6,6 +6,7 @@
 </script>
 
 <ul>
+  <!-- eslint-disable-next-line svelte/require-each-key -->
   {#each items as item}
     <li>{item}</li>
   {/each}

@@ -1,3 +1,5 @@
+<!-- eslint-disable svelte/infinite-reactive-loop, svelte/require-each-key, no-unused-vars -->
+<!-- Infinite reactive loop, missing keys, and unused err parameter are intentional for educational purposes -->
 <script lang="ts">
   import { onMount } from 'svelte';
 

@@ -1,3 +1,5 @@
+<!-- eslint-disable no-empty -->
+<!-- Empty block is intentional for educational purposes -->
 <script>
   function sleep(delay) {
     // Very naive

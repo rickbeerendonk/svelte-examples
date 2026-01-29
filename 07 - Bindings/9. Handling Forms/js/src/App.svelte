@@ -1,3 +1,5 @@
+<!-- eslint-disable svelte/require-each-key -->
+<!-- No key needed for this basic form handling educational example -->
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2024 Rick Beerendonk -->
 
@@ -14,6 +16,7 @@
 
 <div>
   <ul>
+    <!-- eslint-disable-next-line svelte/require-each-key -->
     {#each items as item}
       <li>{item}</li>
     {/each}

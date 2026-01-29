@@ -1,3 +1,5 @@
+<!-- eslint-disable svelte/no-at-debug-tags -->
+<!-- @debug tag is intentionally used for educational purposes -->
 <script>
   let count = 0;
   let time = '';

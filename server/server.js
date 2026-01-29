@@ -1,24 +1,24 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2018 Rick Beerendonk          !*/
 
-/* eslint-disable no-console */
+import { spawn, spawnSync } from 'child_process';
+import { createServer } from 'http';
+import { existsSync, lstatSync, statSync, readdirSync, readFile } from 'fs';
+import { join, dirname } from 'path';
+import { contentType, lookup } from 'mime-types';
 
-const childProcess = require('child_process');
-var http = require('http');
-const fs = require('fs');
-const path = require('path');
-var mime = require('../node_modules/mime-types');
-
-const [, , filePath] = process.argv;
+let [, , ...filePath] = process.argv;
+// Windows fix:
+filePath = filePath.join(' ').replaceAll('\\\\', '\\');
 
 /*** Helper functions ***/
 
 function findFileInPath(directory, file) {
-  const filename = path.join(directory, file);
-  if (fs.existsSync(filename)) {
+  const filename = join(directory, file);
+  if (existsSync(filename)) {
     return filename;
   } else {
-    const basename = path.dirname(directory);
+    const basename = dirname(directory);
     return basename && basename !== directory
       ? findFileInPath(basename, file)
       : null;
@@ -26,14 +26,14 @@ function findFileInPath(directory, file) {
 }
 
 function isDirectory(dirPath) {
-  return fs.existsSync(dirPath) && fs.lstatSync(dirPath).isDirectory();
+  return existsSync(dirPath) && lstatSync(dirPath).isDirectory();
 }
 
 function openBrowser(uri) {
   const command =
     process.platform === 'win32' ? `start "" "${uri}"` : `open "${uri}"`;
 
-  childProcess.spawn(command, {
+  spawn(command, {
     shell: true,
     stdio: 'inherit'
   });
@@ -43,7 +43,7 @@ function openBrowser(uri) {
 
 /// Is Angular project? ///
 
-if (filePath && fs.statSync(filePath).isDirectory()) {
+if (filePath && statSync(filePath).isDirectory()) {
   const angularConfigNames = ['angular.json'];
   const angularConfigPath = angularConfigNames.reduce(
     (path, name) => path || findFileInPath(filePath, name),
@@ -53,8 +53,8 @@ if (filePath && fs.statSync(filePath).isDirectory()) {
     // Angular config exists, so execute npm start
     console.log('angular');
     console.log('angular config: ' + angularConfigPath);
-    childProcess.spawnSync('npm', ['start'], {
-      cwd: path.dirname(angularConfigPath),
+    spawnSync('npm', ['start'], {
+      cwd: dirname(angularConfigPath),
       shell: true,
       stdio: 'inherit'
     });
@@ -63,29 +63,29 @@ if (filePath && fs.statSync(filePath).isDirectory()) {
   }
 }
 
-/// Is Svelte project? ///
+/// Is Vite project? ///
 
-if (filePath && fs.statSync(filePath).isDirectory()) {
-  const svelteConfigNames = ['svelte.config.js'];
-  const svelteConfigPath = svelteConfigNames.reduce(
+if (filePath && statSync(filePath).isDirectory()) {
+  const viteConfigNames = ['vite.config.js', 'vite.config.ts'];
+  const viteConfigPath = viteConfigNames.reduce(
     (path, name) => path || findFileInPath(filePath, name),
     null
   );
-  if (svelteConfigPath) {
-    // Svelte config exists, so execute npm start
-    console.log('svelte');
-    console.log('svelte config: ' + svelteConfigPath);
-    childProcess.spawnSync('npm', ['run', 'dev', '--', '--open'], {
-      cwd: path.dirname(svelteConfigPath),
+  if (viteConfigPath) {
+    // Vite config exists, so execute npm start
+    console.log('vite');
+    console.log('vite config: ' + viteConfigPath);
+    spawnSync('npm', ['run', 'dev', '--', '--open'], {
+      cwd: dirname(viteConfigPath),
       shell: true,
       stdio: 'inherit'
     });
-    console.log('svelte done');
+    console.log('vite done');
     process.exit();
   }
 }
 
-/// No Webpack ///
+/// Other ///
 
 const basePath = process.cwd();
 
@@ -95,11 +95,11 @@ if (filePath && filePath.toLowerCase().startsWith(basePath.toLowerCase())) {
   extraUri = filePath.substring(basePath.length).split('\\').join('/');
 }
 
-const server = http.createServer(function (request, response) {
+const server = createServer(function (request, response) {
   // Log request
   //console.log('Request:', request.url);
 
-  let filePath = path.join(basePath, decodeURI(request.url));
+  let filePath = join(basePath, decodeURI(request.url));
   let isDirPath = isDirectory(filePath);
 
   if (isDirPath) {
@@ -111,7 +111,7 @@ const server = http.createServer(function (request, response) {
     } else {
       // Go to parent if it contains 'index.html'
       if (
-        !fs.existsSync(path.join(filePath, 'index.html')) &&
+        !existsSync(join(filePath, 'index.html')) &&
         findFileInPath(filePath, 'index.html')
       ) {
         response.writeHead(302, { Location: `${request.url}..` });
@@ -119,12 +119,12 @@ const server = http.createServer(function (request, response) {
         return;
       } else {
         // Get default files in directories:
-        if (fs.existsSync(path.join(filePath, 'index.html'))) {
-          filePath = path.join(filePath, 'index.html');
+        if (existsSync(join(filePath, 'index.html'))) {
+          filePath = join(filePath, 'index.html');
           isDirPath = false;
         }
-        if (fs.existsSync(path.join(filePath, 'index.js'))) {
-          filePath = path.join(filePath, 'index.js');
+        if (existsSync(join(filePath, 'index.js'))) {
+          filePath = join(filePath, 'index.js');
           isDirPath = false;
         }
       }
@@ -144,8 +144,7 @@ const server = http.createServer(function (request, response) {
         }
         ${
           // Links to: Directories
-          fs
-            .readdirSync(filePath, { withFileTypes: true })
+          readdirSync(filePath, { withFileTypes: true })
             .filter(
               dirent =>
                 dirent.isDirectory() &&
@@ -169,7 +168,7 @@ const server = http.createServer(function (request, response) {
       'utf-8'
     );
   } else {
-    fs.readFile(filePath, function (error, content) {
+    readFile(filePath, function (error, content) {
       if (error) {
         if (error.code === 'ENOENT') {
           response.writeHead(404, { 'Content-Type': 'text/html' });
@@ -184,7 +183,7 @@ const server = http.createServer(function (request, response) {
         }
       } else {
         response.writeHead(200, {
-          'Content-Type': mime.contentType(mime.lookup(filePath))
+          'Content-Type': contentType(lookup(filePath))
         });
         response.end(content, 'utf-8');
       }

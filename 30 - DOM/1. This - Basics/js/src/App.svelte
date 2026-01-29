@@ -1,3 +1,5 @@
+<!-- eslint-disable svelte/no-dom-manipulating -->
+<!-- DOM manipulation is intentional for educational purposes -->
 <script>
   import { onMount } from 'svelte';
 

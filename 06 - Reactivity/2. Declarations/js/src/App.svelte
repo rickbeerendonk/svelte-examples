@@ -2,16 +2,12 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let name = 'Svelte';
-  $: uppercaseName = name.toUpperCase();
-  $: firstPart = uppercaseName.substring(0, 3);
+  // Svelte 5: Use $state for reactive state
+  let count = $state(0);
 
-  function handleChange(e) {
-    name = e.target.value;
-  }
+  // Svelte 5: Use $derived for computed values
+  let doubled = $derived(count * 2);
 </script>
 
-<input value={name} on:input={handleChange} />
-<h1>Hello {name}!</h1>
-<h1>Hello {uppercaseName}!</h1>
-<p>First part: {firstPart}</p>
+<button onclick={() => count++}>Count: {count}</button>
+<p>Doubled: {doubled}</p>

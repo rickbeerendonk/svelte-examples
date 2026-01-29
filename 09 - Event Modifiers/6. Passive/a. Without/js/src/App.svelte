@@ -1,3 +1,5 @@
+<!-- eslint-disable no-empty, no-unused-vars -->
+<!-- Empty blocks and unused event parameter are intentional for educational purposes -->
 <script>
   function sleep(delay) {
     // Very naive

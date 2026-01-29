@@ -1,3 +1,5 @@
+<!-- eslint-disable no-empty, no-unused-vars -->
+<!-- Empty blocks and unused event parameter are intentional for educational purposes -->
 <script lang="ts">
   function sleep(delay) {
     // Very naive
@@ -16,4 +18,3 @@
 <a href="https://www.svelte.dev" on:click={handleClick}>Svelte Website</a>
 
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->

@@ -1,3 +1,5 @@
+<!-- eslint-disable no-empty -->
+<!-- Empty block is intentional for educational purposes -->
 <script lang="ts">
   function sleep(delay) {
     // Very naive
@@ -18,4 +20,3 @@
 </a>
 
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->

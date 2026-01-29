@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Svelte 4 - Reactive State (magic let)</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+      }
+      .badge {
+        display: inline-block;
+        background: #ff3e00;
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+      }
+      button {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="badge">Svelte 4 - Magic Reactivity</div>
+    <div id="app"></div>
+
+    <script type="module">
+      import { mount } from 'svelte';
+      import App from './svelte4.svelte';
+      mount(App, { target: document.getElementById('app') });
+    </script>
+  </body>
+</html>
+
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2025 Rick Beerendonk -->

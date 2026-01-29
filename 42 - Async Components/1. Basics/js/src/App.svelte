@@ -1,3 +1,5 @@
+<!-- eslint-disable svelte/infinite-reactive-loop, svelte/require-each-key -->
+<!-- Infinite reactive loop and missing keys are intentional for educational purposes -->
 <script>
   const languages = ['Dutch', 'English', 'Spanish'];
 

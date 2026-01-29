@@ -1,3 +1,5 @@
+<!-- eslint-disable no-unused-vars -->
+<!-- 'data' object is used in slot props for educational purposes -->
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
 

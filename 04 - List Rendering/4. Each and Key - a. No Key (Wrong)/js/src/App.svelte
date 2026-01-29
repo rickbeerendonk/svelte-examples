@@ -1,3 +1,5 @@
+<!-- eslint-disable svelte/require-each-key -->
+<!-- No key used intentionally to demonstrate the wrong approach for educational purposes -->
 <script>
   let items = ['one', 'two', 'three'];
   let itemId = 4;
@@ -14,6 +16,7 @@
 <button on:click={insertTop}>Insert at Top</button>
 
 <ol>
+  <!-- eslint-disable-next-line svelte/require-each-key -->
   {#each [...items] as item, index}
     <li value={index}><input placeholder={item} /></li>
   {/each}

@@ -1,6 +1,8 @@
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
 
+<!-- eslint-disable no-unused-vars -->
+<!-- 'source' variable is used in slot props for educational purposes -->
 <script>
   let source = 'Container';
 </script>

@@ -1,7 +1,8 @@
 <script>
   import Child from './Child.svelte';
 
-  let count = 0;
+  // Svelte 5: Use $state for reactive state
+  let count = $state(0);
 
   function childChanged() {
     count++;
@@ -9,7 +10,8 @@
 </script>
 
 <div>
-  <Child on:updated={childChanged} />
+  <!-- Svelte 5: Pass callback as prop instead of using on:event -->
+  <Child onupdated={childChanged} />
   <h1>Clicked: {count}</h1>
 </div>
 

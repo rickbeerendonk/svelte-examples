@@ -39,8 +39,7 @@
   </div>
 
   <p>
-    This time we guessed right! You have <strong>six</strong> guesses to get the
-    word.
+    This time we guessed right! You have <strong>six</strong> guesses to get the word.
   </p>
 
   <p>

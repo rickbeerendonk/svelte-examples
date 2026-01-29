@@ -4,6 +4,7 @@
     oh,
     ow = 0;
   let fs = 16;
+  // eslint-disable-next-line no-unused-vars
   let blocks = 3;
 </script>
 

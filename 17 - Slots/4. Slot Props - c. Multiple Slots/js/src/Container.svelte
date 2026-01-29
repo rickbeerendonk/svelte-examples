@@ -1,3 +1,5 @@
+<!-- eslint-disable no-unused-vars -->
+<!-- 'source' variable is used in slot props for educational purposes -->
 <script>
   let source = 'Container';
 </script>

@@ -3,6 +3,7 @@
 
   let h1Ref;
 
+  // eslint-disable-next-line svelte/no-dom-manipulating
   onMount(() => (h1Ref.innerHTML = 'Hello <u>Svelte</u>!!!'));
 </script>
 
