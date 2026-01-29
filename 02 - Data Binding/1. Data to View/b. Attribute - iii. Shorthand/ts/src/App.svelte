@@ -5,4 +5,8 @@
   let value = 'Svelte';
 </script>
 
+<!--
+  Attribute shorthand can be used 
+  when the attribute name and the variable name are the same
+-->
 <input {value} />
