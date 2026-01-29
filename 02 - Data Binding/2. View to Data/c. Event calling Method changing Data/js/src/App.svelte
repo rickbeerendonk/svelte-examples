@@ -1,12 +1,12 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
-  let count = 0;
+  let count = $state(0);
 
   function handleClick() {
     count++;
   }
 </script>
 
-<button on:click={handleClick}>This has been clicked {count} times!</button>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<button onclick={handleClick}>This has been clicked {count} times!</button>
