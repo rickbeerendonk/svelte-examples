@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
   let items = [
     { id: 1, name: 'one' },
@@ -7,7 +10,7 @@
   let itemId = 4;
 
   function insertTop() {
-    items = [{ id: itemId, name: itemId++ }, ...items];
+    items = [{ id: itemId, name: `${itemId++}` }, ...items];
   }
 </script>
 
@@ -22,6 +25,3 @@
     <li value={index}><input placeholder={item.name} /></li>
   {/each}
 </ol>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->

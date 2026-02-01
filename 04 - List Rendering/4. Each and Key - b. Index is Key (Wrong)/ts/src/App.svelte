@@ -1,9 +1,14 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
+<!-- eslint-disable svelte/require-each-key -->
+<!-- Index as key used intentionally to demonstrate the wrong approach for educational purposes -->
 <script lang="ts">
   let items = ['one', 'two', 'three'];
   let itemId = 4;
 
   function insertTop() {
-    items = [itemId++, ...items];
+    items = [`${itemId++}`, ...items];
   }
 </script>
 
@@ -18,6 +23,3 @@
     <li value={index}><input placeholder={item} /></li>
   {/each}
 </ol>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
