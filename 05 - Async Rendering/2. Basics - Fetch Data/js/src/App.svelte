@@ -16,6 +16,7 @@
   <p>Loading...</p>
 {:then todos}
   <ul>
+    <!-- eslint-disable-next-line svelte/require-each-key -->
     {#each todos as todo}
       <li>{todo.title}</li>
     {/each}

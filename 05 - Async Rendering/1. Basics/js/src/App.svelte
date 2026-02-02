@@ -1,4 +1,8 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
+  // eslint-disable-next-line no-unused-vars
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve('Svelte');
@@ -14,6 +18,3 @@
 {:catch error}
   <p style="color: red">{error.message}</p>
 {/await}
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
