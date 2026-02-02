@@ -14,7 +14,9 @@
 {#await promise}
   <p>Loading...</p>
 {:then name}
+  <!-- name = The outcome of the promise when it resolves -->
   <h1>Hello {name}!</h1>
 {:catch error}
+  <!-- error = The error object when the promise is rejected -->
   <p style="color: red">{error.message}</p>
 {/await}
