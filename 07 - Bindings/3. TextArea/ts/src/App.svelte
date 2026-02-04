@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
   let text = `HTML doesn't support multiple lines in attributes.
 Therefor place content between opening and closing tag.
@@ -19,14 +22,11 @@ So in Svelte use bind:value={} instead.`;
 
 <br />
 
-<label> With binding: <br /> <textarea bind:value={text} /> </label>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<label> With binding: <br /> <textarea bind:value={text}></textarea> </label>
 
 <style>
   textarea {
     height: 4rem;
-    width: 25rem;
+    width: 40rem;
   }
 </style>
