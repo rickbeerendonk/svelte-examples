@@ -1,13 +1,11 @@
 /*! European Union Public License version 1.2 !*/
-/*! Copyright © 2020 Rick Beerendonk          !*/
+/*! Copyright © 2019 Rick Beerendonk          !*/
 
+import { mount } from 'svelte';
 import App from './App.svelte';
 
-const app = new App({
-  target: document.getElementById('app'),
-  props: {
-    name: 'Svelte'
-  }
+const app = mount(App, {
+  target: document.getElementById('app')!
 });
 
 export default app;

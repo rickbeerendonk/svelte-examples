@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
   import ComponentA from './ComponentA.svelte';
   import ComponentB from './ComponentB.svelte';
@@ -6,6 +9,3 @@
 <h1>App</h1>
 <ComponentA />
 <ComponentB />
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
