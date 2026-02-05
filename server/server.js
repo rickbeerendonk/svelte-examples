@@ -100,6 +100,11 @@ const server = http.createServer(function (request, response) {
   //console.log('Request:', request.url);
 
   let filePath = path.join(basePath, decodeURI(request.url));
+    if (path.normalize(decodeURI(request.url)) !== decodeURI(request.url)) {
+        response.statusCode = 403;
+        response.end();
+        return;
+    }
   let isDirPath = isDirectory(filePath);
 
   if (isDirPath) {
