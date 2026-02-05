@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import { onMount } from 'svelte';
 
@@ -9,6 +12,3 @@
 
 <input bind:this={inputRef} bind:value={name} />
 <h1>Hello {name}!</h1>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
