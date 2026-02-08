@@ -1,7 +1,8 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
-  export let boolProp;
-  export let numberProp;
-  export let stringProp;
+  let { boolProp, numberProp, stringProp } = $props();
 </script>
 
 <ul>
@@ -9,6 +10,3 @@
   <li>Number: <b>numberProp</b> ({typeof numberProp})</li>
   <li>String: <b>stringProp</b> ({typeof stringProp})</li>
 </ul>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->

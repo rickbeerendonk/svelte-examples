@@ -2,8 +2,7 @@
 <!-- Copyright © 2024 Rick Beerendonk -->
 
 <script>
-  export let arrayProp;
-  export let objectProp;
+  let { arrayProp, objectProp } = $props();
 </script>
 
 <ul>
