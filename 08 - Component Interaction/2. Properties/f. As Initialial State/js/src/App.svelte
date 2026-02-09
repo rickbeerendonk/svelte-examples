@@ -1,14 +1,14 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
-  export let count;
+  let { count } = $props();
 
   let items = [...Array(count).keys()];
 </script>
 
 <ul>
-  {#each items as item}
+  {#each items as item (item)}
     <li>{item}</li>
   {/each}
 </ul>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
