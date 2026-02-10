@@ -4,6 +4,7 @@
 <script>
   let { count } = $props();
 
+  // svelte-ignore state_referenced_locally
   let items = [...Array(count).keys()];
 </script>
 
