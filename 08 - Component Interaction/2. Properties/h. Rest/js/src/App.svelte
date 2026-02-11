@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import ImportantAnchor from './ImportantAnchor.svelte';
 </script>
@@ -11,6 +14,3 @@
 >
   Svelte website
 </ImportantAnchor>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
