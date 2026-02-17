@@ -1,15 +1,12 @@
-<script lang="ts">
-  import { createEventDispatcher } from 'svelte';
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
 
-  // Call createEventDispatcher() during Component Initialisation
-  const dispatch = createEventDispatcher();
+<script lang="ts">
+  let { onupdated }: { onupdated?: () => void } = $props();
 
   function buttonClicked() {
-    dispatch('updated');
+    onupdated?.();
   }
 </script>
 
-<button on:click={buttonClicked}>Click</button>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<button onclick={buttonClicked}>Click</button>

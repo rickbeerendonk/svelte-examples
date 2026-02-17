@@ -1,17 +1,17 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
   import Child from './Child.svelte';
 
-  let count = 0;
+  let count = $state(0);
 
-  function childChanged() {
+  function childUpdated() {
     count++;
   }
 </script>
 
 <div>
-  <Child on:updated={childChanged} />
+  <Child onupdated={childUpdated} />
   <h1>Clicked: {count}</h1>
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
