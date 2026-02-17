@@ -2,7 +2,11 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let props = $props();
+  interface Props {
+    [key: string]: unknown;
+  }
+
+  let props: Props = $props();
 </script>
 
 <h1>{JSON.stringify(props)}!</h1>

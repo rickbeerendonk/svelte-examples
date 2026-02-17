@@ -2,7 +2,11 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let { onupdated }: { onupdated?: () => void } = $props();
+  interface Props {
+    onupdated?: () => void;
+  }
+
+  let { onupdated }: Props = $props();
 
   function buttonClicked() {
     onupdated?.();

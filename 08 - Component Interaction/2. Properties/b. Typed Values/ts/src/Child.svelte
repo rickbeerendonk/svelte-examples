@@ -2,7 +2,13 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let { boolProp, numberProp, stringProp } = $props();
+  interface Props {
+    boolProp: boolean | string;
+    numberProp: number | string;
+    stringProp: string;
+  }
+
+  let { boolProp, numberProp, stringProp }: Props = $props();
 </script>
 
 <ul>

@@ -2,7 +2,11 @@
 <!-- Copyright © 2024 Rick Beerendonk -->
 
 <script lang="ts">
-  let { onadded }: { onadded?: (name: string) => void } = $props();
+  interface Props {
+    onadded?: (name: string) => void;
+  }
+
+  let { onadded }: Props = $props();
 
   let name = $state('');
 

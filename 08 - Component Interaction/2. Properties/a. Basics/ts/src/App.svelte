@@ -2,7 +2,11 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let { name } = $props();
+  interface Props {
+    name: string;
+  }
+
+  let { name }: Props = $props();
 </script>
 
 <h1>Hello {name}!</h1>

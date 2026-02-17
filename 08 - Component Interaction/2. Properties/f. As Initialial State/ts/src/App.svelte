@@ -2,7 +2,11 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let { count } = $props();
+  interface Props {
+    count: number;
+  }
+
+  let { count }: Props = $props();
 
   // svelte-ignore state_referenced_locally
   let items = [...Array(count).keys()];
