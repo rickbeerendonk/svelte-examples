@@ -1,30 +1,29 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import Child from './Child.svelte';
 
-  let eventObject = undefined;
+  let callbackData = $state(undefined);
 
-  function greetingChanged(e) {
-    console.log(e);
-    eventObject = e;
+  function greetingChanged(data) {
+    console.log(data);
+    callbackData = data;
   }
 </script>
 
 <div>
-  <Child on:change={greetingChanged} />
-  <h1>Event Object</h1>
-  {#if eventObject}
+  <Child onchange={greetingChanged} />
+  <h1>Callback Data</h1>
+  {#if callbackData}
     <ul>
-      <li>Type: <b>{eventObject.type}</b></li>
-      <li>Detail: <b>{JSON.stringify(eventObject.detail)}</b></li>
-      <li class="remark">Open console for more properties.</li>
+      <li>Data: <b>{JSON.stringify(callbackData)}</b></li>
+      <li class="remark">Open console for more details.</li>
     </ul>
   {:else}
     <p>Undefined</p>
   {/if}
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .remark {

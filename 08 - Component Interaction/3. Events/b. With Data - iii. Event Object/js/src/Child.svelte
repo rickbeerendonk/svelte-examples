@@ -1,18 +1,16 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
-  import { createEventDispatcher } from 'svelte';
+  let { onchange } = $props();
 
-  const dispatch = createEventDispatcher();
-
-  let name = 'Svelte';
+  let name = $state('Svelte');
 
   function changed(e) {
-    dispatch('change', {
+    onchange?.({
       name: e.target.value
     });
   }
 </script>
 
-<input value={name} on:keyup={changed} />
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<input value={name} onkeyup={changed} />

@@ -1,17 +1,17 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
-  import { createEventDispatcher } from 'svelte';
+  interface Props {
+    name: string;
+    onchange?: (value: string) => void;
+  }
 
-  // Call createEventDispatcher() during Component Initialisation
-  const dispatch = createEventDispatcher();
+  let { name, onchange }: Props = $props();
 
-  export let name;
-
-  function changed(e) {
-    dispatch('change', e.target.value);
+  function changed(e: Event) {
+    onchange?.((e.target as HTMLInputElement).value);
   }
 </script>
 
-<input value={name} on:keyup={changed} />
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<input value={name} onkeyup={changed} />

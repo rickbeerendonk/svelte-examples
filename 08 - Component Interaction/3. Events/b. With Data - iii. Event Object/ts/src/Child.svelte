@@ -1,18 +1,20 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
-  import { createEventDispatcher } from 'svelte';
+  interface Props {
+    onchange?: (data: { name: string }) => void;
+  }
 
-  const dispatch = createEventDispatcher();
+  let { onchange }: Props = $props();
 
-  let name = 'Svelte';
+  let name = $state('Svelte');
 
-  function changed(e) {
-    dispatch('change', {
-      name: e.target.value
+  function changed(e: Event) {
+    onchange?.({
+      name: (e.target as HTMLInputElement).value
     });
   }
 </script>
 
-<input value={name} on:keyup={changed} />
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<input value={name} onkeyup={changed} />
