@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let name = 'Svelte';
+  let name = $state('Svelte');
 </script>
 
 <label> One way: <input value={name} /> </label>

@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let text = 'Svelte';
+  let text = $state('Svelte');
 </script>
 
 <div contenteditable="true" bind:innerHTML={text}></div>

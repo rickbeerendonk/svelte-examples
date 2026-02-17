@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let checked = ['B'];
+  let checked = $state(['B']);
 </script>
 
 <label> <input type="checkbox" bind:group={checked} value="A" /> A </label>

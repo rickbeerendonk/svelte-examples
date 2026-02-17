@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let checked = false;
+  let checked = $state(false);
 </script>
 
 <label>

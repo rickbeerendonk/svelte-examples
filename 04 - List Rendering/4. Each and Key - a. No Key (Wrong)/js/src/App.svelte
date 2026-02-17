@@ -4,7 +4,7 @@
 <!-- eslint-disable svelte/require-each-key -->
 <!-- No key used intentionally to demonstrate the wrong approach for educational purposes -->
 <script>
-  let items = ['one', 'two', 'three'];
+  let items = $state(['one', 'two', 'three']);
   let itemId = 4;
 
   function insertTop() {
@@ -16,7 +16,7 @@
   Add some text in an input and observe what happens if you click the button.
 </p>
 
-<button on:click={insertTop}>Insert at Top</button>
+<button onclick={insertTop}>Insert at Top</button>
 
 <ol>
   <!-- eslint-disable-next-line svelte/require-each-key -->

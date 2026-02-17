@@ -2,11 +2,11 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let ch,
-    cw,
-    oh,
-    ow = 0;
-  let fs = 16;
+  let ch = $state(0);
+  let cw = $state(0);
+  let oh = $state(0);
+  let ow = $state(0);
+  let fs = $state(16);
 </script>
 
 <label>

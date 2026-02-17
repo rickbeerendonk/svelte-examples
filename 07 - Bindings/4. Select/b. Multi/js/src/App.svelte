@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let selected = ['B', 'C'];
+  let selected = $state(['B', 'C']);
 </script>
 
 <select multiple bind:value={selected}>

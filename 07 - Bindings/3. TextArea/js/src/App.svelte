@@ -2,10 +2,10 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let text = `HTML doesn't support multiple lines in attributes.
+  let text = $state(`HTML doesn't support multiple lines in attributes.
 Therefor place content between opening and closing tag.
 In JS you can add multiline strings in attributes.
-So in Svelte use bind:value={} instead.`;
+So in Svelte use bind:value={} instead.`);
 </script>
 
 <label>

@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let items = [0, 0, 0];
+  let items = $state([0, 0, 0]);
 </script>
 
 <!-- eslint-disable-next-line svelte/require-each-key -->

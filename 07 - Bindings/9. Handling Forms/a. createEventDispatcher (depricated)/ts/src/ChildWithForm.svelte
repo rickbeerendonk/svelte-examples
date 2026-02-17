@@ -2,18 +2,18 @@
 <!-- Copyright © 2024 Rick Beerendonk -->
 
 <script lang="ts">
-  import { createEventDispatcher } from 'svelte';
+  let { onadded }: { onadded?: (name: string) => void } = $props();
 
-  let name = '';
-  const dispatch = createEventDispatcher();
+  let name = $state('');
 
-  function handleSubmit() {
-    dispatch('added', name); // Emit the custom event 'add' with the name as detail
+  function handleSubmit(e: Event) {
+    e.preventDefault();
+    onadded?.(name); // Call callback prop with the name
     name = ''; // Clear the input field
   }
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
+<form onsubmit={handleSubmit}>
   <input bind:value={name} />
   <button type="submit">Add</button>
 </form>

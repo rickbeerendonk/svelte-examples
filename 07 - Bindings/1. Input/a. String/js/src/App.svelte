@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let name = 'Svelte';
+  let name = $state('Svelte');
 </script>
 
 <label> One way: <input value={name} /> </label>
@@ -11,7 +11,7 @@
 
 <label>
   Two way (long):
-  <input value={name} on:input={e => (name = e.currentTarget.value)} />
+  <input value={name} oninput={e => (name = e.currentTarget.value)} />
 </label>
 
 <br />

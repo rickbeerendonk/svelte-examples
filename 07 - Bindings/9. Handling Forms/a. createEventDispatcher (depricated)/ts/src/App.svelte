@@ -7,10 +7,9 @@
 <script lang="ts">
   import ChildWithForm from './ChildWithForm.svelte';
 
-  let items = ['Item 1', 'Item 2'];
+  let items = $state(['Item 1', 'Item 2']);
 
-  function handleAdd(e: CustomEvent<string>) {
-    const newItem = e.detail;
+  function handleAdd(newItem: string) {
     items = [...items, newItem]; // Reactive assignment
   }
 </script>
@@ -22,5 +21,5 @@
       <li>{item}</li>
     {/each}
   </ul>
-  <ChildWithForm on:added={handleAdd} />
+  <ChildWithForm onadded={handleAdd} />
 </div>

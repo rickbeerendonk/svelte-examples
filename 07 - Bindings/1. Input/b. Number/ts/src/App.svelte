@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let count = 0;
+  let count = $state(0);
 </script>
 
 <label> type = number: <input type="number" bind:value={count} /> </label>

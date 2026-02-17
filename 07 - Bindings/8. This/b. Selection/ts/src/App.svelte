@@ -5,7 +5,7 @@
   import { onMount } from 'svelte';
 
   let inputRef: HTMLInputElement | undefined;
-  let name = 'Svelte';
+  let name = $state('Svelte');
 
   onMount(() => inputRef?.select());
 </script>

@@ -2,11 +2,11 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let items = [
+  let items = $state([
     { id: 1, name: 'one' },
     { id: 2, name: 'two' },
     { id: 3, name: 'three' }
-  ];
+  ]);
   let itemId = 4;
 
   function insertTop() {
@@ -18,7 +18,7 @@
   Add some text in an input and observe what happens if you click the button.
 </p>
 
-<button on:click={insertTop}>Insert at Top</button>
+<button onclick={insertTop}>Insert at Top</button>
 
 <ol>
   {#each [...items] as item, index (item.id)}

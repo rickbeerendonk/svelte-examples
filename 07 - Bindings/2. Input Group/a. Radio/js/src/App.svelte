@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let checked = 'B';
+  let checked = $state('B');
 </script>
 
 <label> <input type="radio" bind:group={checked} value="A" /> A </label>

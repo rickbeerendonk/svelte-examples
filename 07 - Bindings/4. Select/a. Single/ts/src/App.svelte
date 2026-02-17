@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let selected = 'B';
+  let selected = $state('B');
 </script>
 
 <select bind:value={selected}>
