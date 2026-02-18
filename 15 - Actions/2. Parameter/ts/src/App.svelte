@@ -1,5 +1,8 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
-  let param = '';
+  let param = $state('');
 
   setInterval(() => {
     param = Date();
@@ -25,9 +28,6 @@
 </p>
 
 <div use:action={param}>Element</div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .comment {
