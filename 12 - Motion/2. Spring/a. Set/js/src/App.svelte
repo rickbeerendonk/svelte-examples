@@ -1,19 +1,19 @@
-<script>
-  import { spring } from 'svelte/motion';
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
 
-  let count = spring(0);
+<script>
+  import { Spring } from 'svelte/motion';
+
+  let count = new Spring(0);
 
   function handleClick() {
     // Read
-    const currentCount = $count;
+    const currentCount = count.target;
 
-    // Write
-    count.set(currentCount + 1);
+    // Write (set target, spring animates current towards it)
+    count.target = currentCount + 1;
   }
 </script>
 
-<!-- Use $... to get the value -->
-<button on:click={handleClick}>This has been clicked {$count} times!</button>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<!-- Use .current to get the value -->
+<button onclick={handleClick}>This has been clicked {count.current} times!</button>
