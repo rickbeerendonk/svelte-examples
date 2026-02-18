@@ -1,16 +1,14 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
-  import { onMount } from 'svelte';
+  let name = $state('World');
+  let ref = $state();
 
-  let name = 'World';
-  let ref;
-
-  onMount(() => {
-    ref.focus();
+  $effect(() => {
+    ref?.focus();
   });
 </script>
 
 <input bind:value={name} bind:this={ref} />
 <h1>Hello {name}!</h1>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
