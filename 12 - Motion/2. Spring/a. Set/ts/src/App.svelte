@@ -16,6 +16,6 @@
 </script>
 
 <!-- Use .current to get the value -->
-<button onclick={handleClick}
-  >This has been clicked {count.current} times!</button
->
+<button onclick={handleClick}>
+  This has been clicked {count.current} times!
+</button>
