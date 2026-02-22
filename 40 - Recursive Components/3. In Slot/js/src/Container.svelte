@@ -1,21 +1,23 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
-  let recursive = false;
+  let { children } = $props();
+
+  let recursive = $state(false);
 </script>
 
-<button on:click={() => (recursive = true)} disabled={recursive}>
+<button onclick={() => (recursive = true)} disabled={recursive}>
   Hello World!
 </button>
 {#if recursive}
   <div class="container">
     The only item:
     <div class="content">
-      <slot />
+      {@render children()}
     </div>
   </div>
 {/if}
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .container {

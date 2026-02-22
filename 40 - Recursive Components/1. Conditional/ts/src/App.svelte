@@ -1,13 +1,15 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
-  let recursive = false;
+  import App from './App.svelte';
+
+  let recursive = $state(false);
 </script>
 
-<button on:click={() => (recursive = true)} disabled={recursive}>
+<button onclick={() => (recursive = true)} disabled={recursive}>
   Hello World!
 </button>
 {#if recursive}
-  <svelte:self />
+  <App />
 {/if}
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->

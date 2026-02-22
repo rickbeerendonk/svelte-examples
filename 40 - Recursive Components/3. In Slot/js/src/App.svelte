@@ -1,11 +1,12 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
+  import App from './App.svelte';
   import Container from './Container.svelte';
 </script>
 
 <Container>
   <em>Slot:</em>
-  <svelte:self />
+  <App />
 </Container>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->

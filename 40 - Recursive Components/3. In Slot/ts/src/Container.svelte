@@ -1,21 +1,29 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
-  let recursive = false;
+  import type { Snippet } from 'svelte';
+
+  interface Props {
+    children: Snippet;
+  }
+
+  let { children }: Props = $props();
+
+  let recursive = $state(false);
 </script>
 
-<button on:click={() => (recursive = true)} disabled={recursive}>
+<button onclick={() => (recursive = true)} disabled={recursive}>
   Hello World!
 </button>
 {#if recursive}
   <div class="container">
     The only item:
     <div class="content">
-      <slot />
+      {@render children()}
     </div>
   </div>
 {/if}
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .container {
