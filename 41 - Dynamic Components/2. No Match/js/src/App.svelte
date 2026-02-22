@@ -12,10 +12,10 @@
     { name: 'spanish', component: GreetingSpanish }
   ];
 
-  let selectedLanguage = null;
+  let selectedLanguage = $state(null);
 </script>
 
-{#each languages as language}
+{#each languages as language (language.name)}
   <label>
     <input bind:group={selectedLanguage} type="radio" value={language} />
     {language.name}

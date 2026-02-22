@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
   import GreetingDutch from './components/GreetingDutch.svelte';
   import GreetingEnglish from './components/GreetingEnglish.svelte';
@@ -9,10 +12,10 @@
     { name: 'spanish', component: GreetingSpanish }
   ];
 
-  let selectedLanguage = null;
+  let selectedLanguage = $state(null);
 </script>
 
-{#each languages as language}
+{#each languages as language (language.name)}
   <label>
     <input bind:group={selectedLanguage} type="radio" value={language} />
     {language.name}
@@ -25,9 +28,6 @@
     this={selectedLanguage ? selectedLanguage.component : null}
   />
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   #result {
