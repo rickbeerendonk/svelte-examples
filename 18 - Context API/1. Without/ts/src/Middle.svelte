@@ -1,10 +1,14 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
   import Bottom from './Bottom.svelte';
 
-  export let color;
+  interface Props {
+    color: string;
+  }
+
+  let { color }: Props = $props();
 </script>
 
 <Bottom {color} />
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
