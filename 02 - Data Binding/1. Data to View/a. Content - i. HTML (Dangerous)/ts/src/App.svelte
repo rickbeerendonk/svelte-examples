@@ -1,7 +1,7 @@
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2020 Rick Beerendonk -->
 
-<script>
+<script lang="ts">
   /* eslint-disable svelte/no-at-html-tags */
 
   const name = '<u>Svelte</u>';
