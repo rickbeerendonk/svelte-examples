@@ -3,9 +3,9 @@
 
 <script lang="ts"></script>
 
-{#snippet greeting()}
-  <p>Svelte snippet!</p>
+{#snippet greeting(name: string)}
+  <p>Hello {name}!</p>
 {/snippet}
 
-{@render greeting()}
-{@render greeting()}
+{@render greeting('Alexandra')}
+{@render greeting('Benjamin')}
