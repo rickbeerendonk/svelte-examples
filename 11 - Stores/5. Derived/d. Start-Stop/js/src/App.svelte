@@ -1,3 +1,6 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import { frequency, tick } from './stores.js';
 </script>
@@ -12,8 +15,6 @@
   <h1>{$tick.getUTCSeconds()}.{$tick.getUTCMilliseconds()}</h1>
 {/if}
 
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .comment {

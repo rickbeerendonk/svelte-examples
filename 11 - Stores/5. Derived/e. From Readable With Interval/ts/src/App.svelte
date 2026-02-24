@@ -1,6 +1,9 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
-  import Child_Subscribe from './Child_Subscribe';
-  let visible = true;
+  import Child_Subscribe from './Child_Subscribe.svelte';
+  let visible = $state(true);
 </script>
 
 <p class="comment">
@@ -14,15 +17,12 @@
   started and stopped. An interval is 5 seconds.
 </p>
 
-<button on:click={() => (visible = !visible)}>
+<button onclick={() => (visible = !visible)}>
   {#if visible}Hide{:else}Show{/if}
 </button>
 {#if visible}
   <Child_Subscribe />
 {/if}
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .comment {

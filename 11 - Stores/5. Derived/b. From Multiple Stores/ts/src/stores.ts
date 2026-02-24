@@ -7,7 +7,7 @@ import { readable, derived } from 'svelte/store';
 
 const name1 = readable('svelte');
 
-const name2 = readable('sapper');
+const name2 = readable('sveltekit');
 
 export const namesUpperCase = derived(
   // Store(s)
