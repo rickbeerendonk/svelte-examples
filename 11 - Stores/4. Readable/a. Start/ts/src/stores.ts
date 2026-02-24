@@ -5,7 +5,7 @@
 
 import { readable } from 'svelte/store';
 
-export const time = readable(
+export const time = readable<Date>(
   // Initial value
   undefined,
   // Start setting values

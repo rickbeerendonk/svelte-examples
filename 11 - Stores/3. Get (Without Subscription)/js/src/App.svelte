@@ -1,7 +1,10 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import Child_Get from './Child_Get.svelte';
 
-  let visible = true;
+  let visible = $state(true);
 
   function handleClick() {
     visible = !visible;
@@ -15,7 +18,7 @@
   Open the console to see that in reality there is a subscribe immediately
   followed by an unsubscribe event. Press the button to call get().
 </p>
-<button on:click={handleClick}>
+<button onclick={handleClick}>
   {#if visible}Hide{:else}Show{/if}
 </button>
 <hr />
@@ -24,9 +27,6 @@
     <Child_Get />
   {/if}
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .comment {
