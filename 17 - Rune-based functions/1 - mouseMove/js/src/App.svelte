@@ -2,9 +2,9 @@
 
 <script>
   import Greeting from './Greeting.svelte';
-  import { useMouseMove } from './useMouseMove.svelte.js';
+  import { useMouse } from './mouseMove.svelte.js';
 
-  const mouse = useMouseMove();
+  const mouse = useMouse();
 </script>
 
 <Greeting name={'(x:' + mouse.x + ', y: ' + mouse.y + ')'} />
