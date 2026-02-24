@@ -1,6 +1,9 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
-  let isDynamic1 = false;
-  let isDynamic2 = false;
+  let isDynamic1 = $state(false);
+  let isDynamic2 = $state(false);
 
   function updateDynamic() {
     if (isDynamic1) {
@@ -20,13 +23,11 @@
   class="static"
   class:dynamic1={isDynamic1}
   class:dynamic2={isDynamic2}
-  on:click={updateDynamic}
+  onclick={updateDynamic}
+  style="cursor: pointer;"
 >
   Hello Svelte!
 </h1>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .static {

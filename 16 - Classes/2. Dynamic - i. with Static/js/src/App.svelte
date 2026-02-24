@@ -2,12 +2,12 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let isDynamic = false;
+  let isDynamic = $state(false);
 </script>
 
 <button
   class={`static ${isDynamic ? 'dynamic' : ''}`}
-  on:click={() => (isDynamic = !isDynamic)}
+  onclick={() => (isDynamic = !isDynamic)}
 >
   Hello Svelte!
 </button>

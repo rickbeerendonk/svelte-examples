@@ -2,13 +2,14 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let isDynamic = false;
+  let isDynamic = $state(false);
 </script>
 
 <button
   class="static"
   class:dynamic={isDynamic}
-  on:click={() => (isDynamic = !isDynamic)}
+  onclick={() => (isDynamic = !isDynamic)}
+  style="cursor: pointer"
 >
   Hello Svelte!
 </button>
