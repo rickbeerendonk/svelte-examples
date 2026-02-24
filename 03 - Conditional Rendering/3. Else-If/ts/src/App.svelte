@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let language = 'nl';
+  const language = 'nl';
 </script>
 
 {#if language === 'en'}
