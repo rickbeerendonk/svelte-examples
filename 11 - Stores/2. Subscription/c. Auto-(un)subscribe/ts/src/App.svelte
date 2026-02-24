@@ -1,15 +1,18 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script lang="ts">
   import Child_Set from './Child_Set.svelte';
   import Child_Subscribe from './Child_Subscribe.svelte';
 
-  let visible = true;
+  let visible = $state(true);
 
   function handleClick() {
     visible = !visible;
   }
 </script>
 
-<button on:click={handleClick}>
+<button onclick={handleClick}>
   {#if visible}Hide{:else}Show{/if}
 </button>
 <hr />
@@ -19,6 +22,3 @@
     <Child_Subscribe />
   {/if}
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
