@@ -7,6 +7,9 @@ import { existsSync, lstatSync, statSync, readdirSync, readFile } from 'fs';
 import { join, dirname } from 'path';
 import { contentType, lookup } from 'mime-types';
 
+// Open in Browser (true) or display url (false)
+const openInBrowser = false;
+
 let [, , ...filePath] = process.argv;
 // Windows fix:
 filePath = filePath.join(' ').replaceAll('\\\\', '\\');
@@ -75,7 +78,7 @@ if (filePath && statSync(filePath).isDirectory()) {
     // Vite config exists, so execute npm start
     console.log('vite');
     console.log('vite config: ' + viteConfigPath);
-    spawnSync('npm', ['run', 'dev', '--', '--open'], {
+    spawnSync('npm', ['run', 'dev', '--', openInBrowser ? '--open' : ''], {
       cwd: dirname(viteConfigPath),
       shell: true,
       stdio: 'inherit'
@@ -192,7 +195,7 @@ const server = createServer(function (request, response) {
 });
 
 server.listen().on('listening', () => {
-  const serverUri = `http://localhost:${server.address().port}`;
+  const serverUri = `Server: http://localhost:${server.address().port}`;
   const totalUri = `${serverUri}${extraUri}${
     extraUri[extraUri.length - 1] !== '/' && '/'
   }`.replace(/\s+/g, '%20');
