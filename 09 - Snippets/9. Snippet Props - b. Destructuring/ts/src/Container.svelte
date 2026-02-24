@@ -10,7 +10,7 @@
 
   let { children }: Props = $props();
 
-  let data = {
+  const data = {
     source: 'Container'
   };
 </script>

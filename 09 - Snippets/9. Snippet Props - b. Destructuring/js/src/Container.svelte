@@ -4,7 +4,7 @@
 <script>
   let { children } = $props();
 
-  let data = {
+  const data = {
     source: 'Container'
   };
 </script>
