@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let show = false;
+  const show = false;
 </script>
 
 {#if show}<span>Invisible (not rendered!)</span>{:else}<span>Visible</span>{/if}

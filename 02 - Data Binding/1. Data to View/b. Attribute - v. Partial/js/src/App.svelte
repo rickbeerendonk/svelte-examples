@@ -2,7 +2,7 @@
 <!-- Copyright © 2024 Rick Beerendonk -->
 
 <script>
-  let name = 'Svelte';
+  const name = 'Svelte';
 </script>
 
 <!-- Partial databinding (in a string!)-->

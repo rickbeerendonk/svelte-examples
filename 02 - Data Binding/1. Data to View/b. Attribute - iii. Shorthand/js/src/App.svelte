@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script>
-  let value = 'Svelte';
+  const value = 'Svelte';
 </script>
 
 <!--

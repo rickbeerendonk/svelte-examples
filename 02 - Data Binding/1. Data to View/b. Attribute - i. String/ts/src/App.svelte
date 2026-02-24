@@ -2,7 +2,7 @@
 <!-- Copyright © 2019 Rick Beerendonk -->
 
 <script lang="ts">
-  let name = 'Svelte';
+  const name = 'Svelte';
 </script>
 
 <input value={name} />

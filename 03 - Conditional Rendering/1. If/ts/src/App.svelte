@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk -->
 
 <script lang="ts">
-  let show = true;
+  const show = true;
 </script>
 
 {#if show}<span>Visible</span>{/if}
