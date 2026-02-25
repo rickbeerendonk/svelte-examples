@@ -1,40 +1,45 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
 <script>
   import { confetti } from '@neoconfetti/svelte';
   import { enhance } from '$app/forms';
 
-  import { reduced_motion } from './reduced-motion';
+  import { reducedMotion } from './reduced-motion.svelte.js';
 
-  export let data;
-
-  export let form;
+  let { data, form } = $props();
 
   /** Whether or not the user has won */
-  $: won = data.answers.at(-1) === 'xxxxx';
+  let won = $derived(data.answers.at(-1) === 'xxxxx');
 
   /** The index of the current guess */
-  $: i = won ? -1 : data.answers.length;
+  let i = $derived(won ? -1 : data.answers.length);
 
   /** The current guess */
-  $: currentGuess = data.guesses[i] || '';
+  let currentGuess = $state('');
 
   /** Whether the current guess can be submitted */
-  $: submittable = currentGuess.length === 5;
+  let submittable = $derived(currentGuess.length === 5);
+
+  // Sync currentGuess from data when the guess index changes
+  $effect(() => {
+    currentGuess = data.guesses[i] || '';
+  });
 
   /**
    * A map of classnames for all letters that have been guessed,
    * used for styling the keyboard
    */
-  let classnames;
+  let classnames = $state({});
 
   /**
    * A map of descriptions for all letters that have been guessed,
    * used for adding text for assistive technology (e.g. screen readers)
    */
-  let description;
+  let description = $state({});
 
-  $: {
-    classnames = {};
-    description = {};
+  $effect(() => {
+    const cn = {};
+    const desc = {};
 
     data.answers.forEach((answer, i) => {
       const guess = data.guesses[i];
@@ -43,21 +48,25 @@
         const letter = guess[i];
 
         if (answer[i] === 'x') {
-          classnames[letter] = 'exact';
-          description[letter] = 'correct';
-        } else if (!classnames[letter]) {
-          classnames[letter] = answer[i] === 'c' ? 'close' : 'missing';
-          description[letter] = answer[i] === 'c' ? 'present' : 'absent';
+          cn[letter] = 'exact';
+          desc[letter] = 'correct';
+        } else if (!cn[letter]) {
+          cn[letter] = answer[i] === 'c' ? 'close' : 'missing';
+          desc[letter] = answer[i] === 'c' ? 'present' : 'absent';
         }
       }
     });
-  }
+
+    classnames = cn;
+    description = desc;
+  });
 
   /**
    * Modify the game state without making a trip to the server,
    * if client-side JavaScript is enabled
    */
   function update(event) {
+    event.preventDefault();
     const key = event.target.getAttribute('data-key');
 
     if (key === 'backspace') {
@@ -83,7 +92,7 @@
   }
 </script>
 
-<svelte:window on:keydown={keydown} />
+<svelte:window onkeydown={keydown} />
 
 <svelte:head>
   <title>Sverdle</title>
@@ -160,7 +169,7 @@
         >
 
         <button
-          on:click|preventDefault={update}
+          onclick={update}
           data-key="backspace"
           formaction="?/update"
           name="key"
@@ -173,7 +182,7 @@
           <div class="row">
             {#each row as letter}
               <button
-                on:click|preventDefault={update}
+                onclick={update}
                 data-key={letter}
                 class={classnames[letter]}
                 disabled={submittable}
@@ -196,13 +205,13 @@
   <div
     style="position: absolute; left: 50%; top: 30%"
     use:confetti={{
-      particleCount: $reduced_motion ? 0 : undefined,
+      particleCount: reducedMotion.matches ? 0 : undefined,
       force: 0.7,
       stageWidth: window.innerWidth,
       stageHeight: window.innerHeight,
       colors: ['#ff3e00', '#40b3ff', '#676778']
     }}
-  />
+  ></div>
 {/if}
 
 <style>

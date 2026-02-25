@@ -1,13 +1,17 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
 <script>
   import Header from './Header.svelte';
   import './styles.css';
+
+  let { children } = $props();
 </script>
 
 <div class="app">
   <Header />
 
   <main>
-    <slot />
+    {@render children()}
   </main>
 
   <footer>

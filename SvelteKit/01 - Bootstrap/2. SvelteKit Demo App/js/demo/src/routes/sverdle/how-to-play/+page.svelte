@@ -1,3 +1,5 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
 <svelte:head>
   <title>How to play Sverdle</title>
   <meta name="description" content="How to play Sverdle" />
@@ -39,8 +41,7 @@
   </div>
 
   <p>
-    This time we guessed right! You have <strong>six</strong> guesses to get the
-    word.
+    This time we guessed right! You have <strong>six</strong> guesses to get the word.
   </p>
 
   <p>

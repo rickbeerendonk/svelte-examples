@@ -1,3 +1,5 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
 <svelte:head>
   <title>About</title>
   <meta name="description" content="About this app" />
@@ -21,7 +23,7 @@
   </p>
 
   <p>
-    The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading
-    and form handling. Try using it with JavaScript disabled!
+    The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and
+    form handling. Try using it with JavaScript disabled!
   </p>
 </div>
