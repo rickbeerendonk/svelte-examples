@@ -8,5 +8,3 @@
 <input value={name} />
 
 <input value="Fixed" />
-
-<input type="date" value={new Date().toISOString().substring(0, 10)} />
