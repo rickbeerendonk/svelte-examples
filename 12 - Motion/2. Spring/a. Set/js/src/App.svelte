@@ -4,7 +4,7 @@
 <script>
   import { Spring } from 'svelte/motion';
 
-  let count = new Spring(0);
+  const count = new Spring(0);
 
   function handleClick() {
     // Read

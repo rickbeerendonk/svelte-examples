@@ -4,7 +4,7 @@
 <script>
   import { Tween } from 'svelte/motion';
 
-  let count = new Tween(0);
+  const count = new Tween(0);
 
   function handleClick() {
     // Reads .current: the animated value that may be mid-tween (e.g. 3.7).

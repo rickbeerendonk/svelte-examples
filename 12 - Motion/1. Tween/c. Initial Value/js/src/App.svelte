@@ -4,8 +4,8 @@
 <script>
   import { Tween } from 'svelte/motion';
 
-  let count1 = new Tween(0);
-  let count2 = new Tween(undefined); // Not animated on 1st change
+  const count1 = new Tween(0);
+  const count2 = new Tween(undefined); // Not animated on 1st change
 
   function handleClick1() {
     count1.target++;
