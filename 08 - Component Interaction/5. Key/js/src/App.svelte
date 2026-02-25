@@ -4,14 +4,14 @@
 <script>
   import ClickMe from './ClickMe.svelte';
 
-  let id = 0;
+  let id = $state(0);
 
   function handleClick() {
     id += 1;
   }
 </script>
 
-<button on:click={handleClick}>Change ID</button>
+<button onclick={handleClick}>Change ID</button>
 <br />
 {#key id}
   <ClickMe />

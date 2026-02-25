@@ -1,12 +1,16 @@
-<script lang="ts">
-  export let value = 'Svelte';
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
 
-  function changed(e) {
-    value = e.target.value;
+<script lang="ts">
+  interface Props {
+    value: string;
+  }
+
+  let { value = $bindable() }: Props = $props();
+
+  function changed(e: Event) {
+    value = (e.target as HTMLInputElement).value;
   }
 </script>
 
-<input {value} on:keyup={changed} />
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<input {value} onkeyup={changed} />

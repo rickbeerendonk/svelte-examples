@@ -1,12 +1,12 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
-  export let value = 'Svelte';
+  let { value = $bindable() } = $props();
 
   function changed(e) {
     value = e.target.value;
   }
 </script>
 
-<input {value} on:keyup={changed} />
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<input {value} onkeyup={changed} />

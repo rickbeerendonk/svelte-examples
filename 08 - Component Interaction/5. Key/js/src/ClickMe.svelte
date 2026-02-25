@@ -2,13 +2,13 @@
 <!-- Copyright © 2024 Rick Beerendonk -->
 
 <script>
-  let count = 0;
+  let count = $state(0);
 
   function handleClick() {
     count += 1;
   }
 </script>
 
-<button on:click={handleClick}>
+<button onclick={handleClick}>
   This button has been clicked {count} times
 </button>
