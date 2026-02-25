@@ -4,7 +4,7 @@
 <script>
   import { onMount } from 'svelte';
 
-  let name = 'World';
+  let name = $state('World');
   let inputElement;
 
   onMount(() => {
@@ -16,5 +16,5 @@
   }
 </script>
 
-<input bind:this={inputElement} value={name} on:input={handleChange} />
+<input bind:this={inputElement} value={name} oninput={handleChange} />
 <p>Hello {name}!</p>
