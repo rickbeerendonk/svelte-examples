@@ -13,6 +13,8 @@
   ];
 
   let selectedLanguage = $state(null);
+
+  let SelectedComponent = $derived(selectedLanguage?.component ?? null);
 </script>
 
 {#each languages as language (language.name)}
@@ -24,9 +26,9 @@
 
 <div id="result">
   <!-- If this is falsy, no component is shown -->
-  <svelte:component
-    this={selectedLanguage ? selectedLanguage.component : null}
-  />
+  {#if SelectedComponent}
+    <SelectedComponent />
+  {/if}
 </div>
 
 <style>

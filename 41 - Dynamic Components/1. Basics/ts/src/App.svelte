@@ -8,7 +8,7 @@
 
   let language = $state('english');
 
-  let greetingComponent = $derived(
+  let GreetingComponent = $derived(
     (function () {
       switch (language) {
         case 'dutch':
@@ -36,7 +36,7 @@
 </label>
 
 <div id="result">
-  <svelte:component this={greetingComponent} />
+  <GreetingComponent />
 </div>
 
 <style>

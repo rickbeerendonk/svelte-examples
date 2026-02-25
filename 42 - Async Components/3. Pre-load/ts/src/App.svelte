@@ -1,26 +1,31 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
+<!-- eslint-disable svelte/infinite-reactive-loop, svelte/require-each-key, no-unused-vars -->
+<!-- Infinite reactive loop, missing keys, and unused err parameter are intentional for educational purposes -->
 <script lang="ts">
   import { onMount } from 'svelte';
 
-  import Error from './components/Error';
-  import Loading from './components/Loading';
+  import Error from './components/Error.svelte';
+  import Loading from './components/Loading.svelte';
 
   const languages = ['Dutch', 'English', 'Spanish', 'Unknown'];
 
-  let selectedLanguage = null;
-  let selectedComponent = null;
+  let selectedLanguage = $state<string | null>(null);
+  let SelectedComponent = $state<typeof Loading | typeof Error | null>(null);
 
-  $: {
+  $effect(() => {
     if (selectedLanguage) {
-      selectedComponent = Loading;
+      SelectedComponent = Loading;
       import(`./components/Greeting${selectedLanguage}.svelte`)
         .then(module => {
-          selectedComponent = module.default;
+          SelectedComponent = module.default;
         })
         .catch(err => {
-          selectedComponent = Error;
+          SelectedComponent = Error;
         });
     }
-  }
+  });
 
   onMount(async () => {
     import(`./components/GreetingDutch.svelte`);
@@ -36,11 +41,10 @@
 
 <div id="result">
   <!-- If this is falsy, no component is shown -->
-  <svelte:component this={selectedComponent} />
+  {#if SelectedComponent}
+    <SelectedComponent />
+  {/if}
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   #result {

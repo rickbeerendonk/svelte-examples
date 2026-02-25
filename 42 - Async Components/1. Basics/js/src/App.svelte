@@ -1,16 +1,21 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
+<!-- eslint-disable svelte/infinite-reactive-loop, svelte/require-each-key -->
+<!-- Infinite reactive loop and missing keys are intentional for educational purposes -->
 <script>
   const languages = ['Dutch', 'English', 'Spanish'];
 
-  let selectedLanguage = null;
-  let selectedComponent = null;
+  let selectedLanguage = $state(null);
+  let SelectedComponent = $state(null);
 
-  $: {
+  $effect(() => {
     if (selectedLanguage) {
       import(`./components/Greeting${selectedLanguage}.svelte`).then(module => {
-        selectedComponent = module.default;
+        SelectedComponent = module.default;
       });
     }
-  }
+  });
 </script>
 
 {#each languages as language}
@@ -22,11 +27,10 @@
 
 <div id="result">
   <!-- If this is falsy, no component is shown -->
-  <svelte:component this={selectedComponent} />
+  {#if SelectedComponent}
+    <SelectedComponent />
+  {/if}
 </div>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   #result {
