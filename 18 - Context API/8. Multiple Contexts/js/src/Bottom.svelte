@@ -4,8 +4,8 @@
 <script>
   import { getContext } from 'svelte';
 
-  let { color } = getContext('color');
-  let backgroundColor = getContext('background-color').color;
+  const { color } = getContext('color');
+  const backgroundColor = getContext('background-color').color;
 </script>
 
 <h1 style:color style:background-color={backgroundColor}>Bottom</h1>

@@ -14,7 +14,7 @@
 <script>
   // Proof: this log appears once per instance (3x for 3 <Child /> in App.svelte)
   console.log('instance: runs per instance');
-  let id = staticId++;
+  const id = staticId++;
 </script>
 
 <h2>Child {id}</h2>

@@ -5,7 +5,7 @@
   import { getAllContexts } from 'svelte';
 
   // Must be called during component initialization
-  let ctxMaps = getAllContexts();
+  const ctxMaps = getAllContexts();
 </script>
 
 <h1>Contexts</h1>

@@ -1,9 +1,12 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import { setContext } from 'svelte';
   import Middle from './Middle.svelte';
 
-  let color = 'red';
-  let changeCallback = null;
+  let color = $state('red');
+  let changeCallback = $state(null);
 
   function notifyChange() {
     if (changeCallback) {
@@ -29,13 +32,10 @@
 </script>
 
 <Middle />
-<button on:click={handleSwitch}>Switch color</button>
+<button onclick={handleSwitch}>Switch color</button>
 <p class="comment">
-  Observe that the button DOES NOT work, because a context is not reactive.
+  Observe that the button DOES work, because a context is reactive.
 </p>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .comment {

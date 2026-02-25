@@ -1,10 +1,10 @@
-<script>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
+<script lang="ts">
   import { getContext } from 'svelte';
 
-  let { color } = getContext('color');
+  const { color } = getContext<{ color: string }>('color');
 </script>
 
 <h1 style:color>Bottom</h1>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->

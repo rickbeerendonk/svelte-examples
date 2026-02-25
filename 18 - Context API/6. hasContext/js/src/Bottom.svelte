@@ -4,8 +4,8 @@
 <script>
   import { hasContext } from 'svelte';
 
-  let hasOne = hasContext('one');
-  let hasTwo = hasContext('two');
+  const hasOne = hasContext('one');
+  const hasTwo = hasContext('two');
 </script>
 
 <h1>Has context One: {hasOne}</h1>
