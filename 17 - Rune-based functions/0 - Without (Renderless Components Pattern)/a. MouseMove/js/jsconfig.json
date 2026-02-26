@@ -29,5 +29,9 @@
    * Use global.d.ts instead of compilerOptions.types
    * to avoid limiting type declarations.
    */
-  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+  "include": [
+    "../../../0 - Without (Renderless Components Pattern)/a. MouseMove/js/src/**/*.d.ts Run../../../0 - Without (Renderless Components Pattern)/a. MouseMove/js/src/**/*.jsctio../../../0 - Without (Renderless Components Pattern)/a. MouseMove/js/src/**/*.svelte - Renderless Components/a. MouseMove/js/src/**/*.d.ts",
+    "../../../17 - Rune-based functions/22 - Pattern - Renderless Components/a. MouseMove/js/src/**/*.js",
+    "../../../17 - Rune-based functions/22 - Pattern - Renderless Components/a. MouseMove/js/src/**/*.svelte"
+  ]
 }
