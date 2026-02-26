@@ -7,7 +7,7 @@
 
   // console.log will only log the initial value,
   // $inspect will log initial value and updates
-  $inspect(name);
+  $inspect(count, name);
 </script>
 
 <button onclick={() => count++}>Count: {count}</button>
