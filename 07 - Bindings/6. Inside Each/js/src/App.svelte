@@ -10,8 +10,11 @@
   <label>
     {index + 1}:
 
-    <!-- Bindings work inside {#each} -->
-    <input type="range" bind:value={item} />
+    <!-- Bindings work inside {#each}, 
+         but you need to bind to 
+         the array element directly -->
+    <!--  <input type="range" bind:value={item} /> -->
+    <input type="range" bind:value={items[index]} />
   </label>
 {/each}
 
