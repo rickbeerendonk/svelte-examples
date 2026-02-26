@@ -1,11 +1,13 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
 <script>
   import Greeting from './Greeting.svelte';
   import MouseMove from './MouseMove.svelte';
 </script>
 
-<MouseMove let:mousePosition={{ x, y }}>
-  <Greeting name={'(x:' + x + ', y: ' + y + ')'} />
+<MouseMove>
+  {#snippet children({ x, y })}
+    <Greeting name={'(x:' + x + ', y: ' + y + ')'} />
+  {/snippet}
 </MouseMove>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
