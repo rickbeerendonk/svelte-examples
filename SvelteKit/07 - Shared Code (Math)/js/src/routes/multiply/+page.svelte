@@ -5,8 +5,8 @@
   // Code from /routes/multiply/+page.svelte
   import { multiply } from '$lib/math.js';
 
-  let valuesString = '';
-  $: result = multiply(...valuesString.trim().split(' '));
+  let valuesString = $state('');
+  let result = $derived(multiply(...valuesString.trim().split(' ')));
 </script>
 
 <svelte:head>

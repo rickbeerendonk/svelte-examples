@@ -4,8 +4,8 @@
 <script>
   import { sum } from '$lib/math.js';
 
-  let valuesString = '';
-  $: result = sum(...valuesString.trim().split(' ').map(Number));
+  let valuesString = $state('');
+  let result = $derived(sum(...valuesString.trim().split(' ').map(Number)));
 </script>
 
 <svelte:head>

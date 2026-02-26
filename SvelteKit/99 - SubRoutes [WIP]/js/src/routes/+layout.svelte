@@ -1,6 +1,10 @@
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2024 Rick Beerendonk          -->
 
+<script>
+  let { children } = $props();
+</script>
+
 <header>
   <h1>App</h1>
   <nav>
@@ -11,7 +15,7 @@
 </header>
 
 <main>
-  <slot />
+  {@render children()}
 </main>
 
 <footer>My copyright</footer>

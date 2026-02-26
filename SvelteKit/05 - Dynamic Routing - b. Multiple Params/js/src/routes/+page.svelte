@@ -2,8 +2,8 @@
 <!-- Copyright © 2024 Rick Beerendonk          -->
 
 <script>
-  let size = 4;
-  let color = 'red';
+  let size = $state(4);
+  let color = $state('red');
 </script>
 
 <h2>Home</h2>

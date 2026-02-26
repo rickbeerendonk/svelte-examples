@@ -2,7 +2,7 @@
 <!-- Copyright © 2024 Rick Beerendonk          -->
 
 <script>
-  export let data;
+  let { data } = $props();
 </script>
 
 <h2>Home</h2>
