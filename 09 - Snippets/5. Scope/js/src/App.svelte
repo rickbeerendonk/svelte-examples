@@ -2,13 +2,13 @@
 <!-- Copyright © 2026 Rick Beerendonk -->
 
 <script>
-  let { message = `it's great to see you!` } = $props();
+  let { message = `It's great to see you!` } = $props();
 
   // Local variables are available in the snippet
 </script>
 
 {#snippet hello(name)}
-  <p>hello {name}! {message}</p>
+  <p>Hello {name}! {message}</p>
 {/snippet}
 
 {@render hello('Alice')}
