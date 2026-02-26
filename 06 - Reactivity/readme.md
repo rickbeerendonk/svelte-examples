@@ -7,7 +7,7 @@ Svelte uses **runes** to declare reactive state, derived values, and side effect
 
 ## Key Runes
 
-- **`$state`** - Declares reactive state
+- **`$state`** - Declares reactive state (with deep reactivity for arrays and objects)
 - **`$derived`** - Declares derived (computed) values
 - **`$effect`** - Declares side effects that run when dependencies change
 - **`$props`** - Declares component props
