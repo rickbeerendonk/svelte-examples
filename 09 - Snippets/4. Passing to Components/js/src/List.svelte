@@ -6,7 +6,7 @@
 </script>
 
 <ul>
-  {#each items as item}
+  {#each items as item (item)}
     {@render row(item)}
   {/each}
 </ul>
