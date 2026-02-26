@@ -10,16 +10,16 @@
   let items = $state(['Item 1', 'Item 2']);
 
   function handleAdd(newItem: string) {
-    items = [...items, newItem]; // Reactive assignment
+    items.push(newItem);
   }
 </script>
 
 <div>
+  <ChildWithForm onadded={handleAdd} />
   <ul>
     <!-- eslint-disable-next-line svelte/require-each-key -->
     {#each items as item}
       <li>{item}</li>
     {/each}
   </ul>
-  <ChildWithForm onadded={handleAdd} />
 </div>
