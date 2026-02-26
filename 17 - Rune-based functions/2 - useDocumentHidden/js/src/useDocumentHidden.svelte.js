@@ -15,6 +15,8 @@ export function useDocumentHidden() {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
   });
 
+  // Use getters to preserve reactivity across the function boundary
+  // Read-only properties to prevent external mutation
   return {
     get hidden() {
       return hidden;

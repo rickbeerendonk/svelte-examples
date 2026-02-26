@@ -15,5 +15,14 @@ export function useMouseMove() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   });
 
-  return position;
+  // Use getters to preserve reactivity across the function boundary
+  // Read-only properties to prevent external mutation
+  return {
+    get x() {
+      return position.x;
+    },
+    get y() {
+      return position.y;
+    }
+  };
 }
