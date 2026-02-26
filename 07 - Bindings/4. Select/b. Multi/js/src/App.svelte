@@ -10,4 +10,4 @@
   <option>B</option>
   <option>C</option>
 </select>
-<h1>{selected}</h1>
+<h1>{JSON.stringify(selected)}</h1>
