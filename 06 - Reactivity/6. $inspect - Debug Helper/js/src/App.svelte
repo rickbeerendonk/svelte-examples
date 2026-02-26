@@ -5,8 +5,9 @@
   let count = $state(0);
   let name = $state('World');
 
-  // $inspect logs values to the console when they change
-  $inspect(count, name);
+  // console.log will only log the initial value,
+  // $inspect will log initial value and updates
+  $inspect(name);
 </script>
 
 <button onclick={() => count++}>Count: {count}</button>
