@@ -4,7 +4,7 @@
 <script>
   import Child from './Child.svelte';
 
-  let name = $state();
+  let name = $state('World');
 </script>
 
 <div>
