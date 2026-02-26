@@ -1,7 +1,8 @@
-<svelte:options immutable={true} />
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
 
 <script>
-  export let name;
+  let { name } = $props();
 </script>
 
 <h1>Hello {name}!</h1>

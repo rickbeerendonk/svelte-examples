@@ -1,6 +1,11 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2020 Rick Beerendonk -->
+
+<!-- eslint-disable svelte/no-at-debug-tags -->
+<!-- @debug tag is intentionally used for educational purposes -->
 <script>
-  let count = 0;
-  let time = '';
+  let count = $state(0);
+  let time = $state('');
 
   setInterval(() => {
     time = Date();
@@ -16,11 +21,8 @@
 <!-- Will not work with properties of objects or array entries -->
 {@debug count, time}
 
-<button on:click={() => count++}>This has been clicked {count} times!</button>
+<button onclick={() => count++}>This has been clicked {count} times!</button>
 <h2>{time}</h2>
-
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
 
 <style>
   .comment {

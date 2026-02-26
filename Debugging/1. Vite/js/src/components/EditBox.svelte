@@ -1,14 +1,12 @@
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
+
 <script>
-  import { createEventDispatcher } from 'svelte';
-
-  const dispatch = createEventDispatcher();
-
-  export let value;
+  let { value, onchange } = $props();
 
   function changed(e) {
-    dispatch('change', e.target.value);
+    onchange?.(e.target.value);
   }
 </script>
 
-<!-- warn-disable a11y-autofocus -->
-<input autofocus {value} on:keyup={changed} />
+<input {value} onkeyup={changed} />
