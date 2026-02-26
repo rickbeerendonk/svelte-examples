@@ -6,4 +6,4 @@
 </script>
 
 <!-- No snippet value (not even a comment!) -->
-<Container />
+<Container></Container>
