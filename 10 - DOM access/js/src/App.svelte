@@ -5,10 +5,12 @@
   import { onMount } from 'svelte';
 
   let name = $state('World');
-  let inputElement;
+  let inputElement; // Will hold the DOM reference
 
+  // onMount runs after the component is first rendered to the DOM
   onMount(() => {
-    inputElement.select();
+    // Now inputElement is bound to the actual <input> DOM node
+    inputElement.select(); // Select all text in the input
   });
 
   function handleChange(event) {
@@ -16,5 +18,6 @@
   }
 </script>
 
+<!-- bind:this binds the DOM element to the variable -->
 <input bind:this={inputElement} value={name} oninput={handleChange} />
 <p>Hello {name}!</p>
