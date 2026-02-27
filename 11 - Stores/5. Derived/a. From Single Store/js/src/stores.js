@@ -5,7 +5,11 @@
 
 import { readable, derived } from 'svelte/store';
 
-const name = readable('svelte');
+const name = readable('svelte', function start(set) {
+  setTimeout(() => {
+    set('norway');
+  }, 3000);
+});
 
 export const nameUpperCase = derived(
   // Store(s)
