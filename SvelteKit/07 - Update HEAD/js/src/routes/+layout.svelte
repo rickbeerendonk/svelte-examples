@@ -2,15 +2,17 @@
 <!-- Copyright © 2024 Rick Beerendonk          -->
 
 <script>
+  import { resolve } from '$app/paths';
+
   let { children } = $props();
 </script>
 
 <header>
   <h1>App</h1>
   <nav>
-    <a href="/">Home</a>
-    <a href="page1">Page 1</a>
-    <a href="page2">Page 2</a>
+    <a href={resolve('/')}>Home</a>
+    <a href={resolve('/page1')}>Page 1</a>
+    <a href={resolve('/page2')}>Page 2</a>
   </nav>
 </header>
 
