@@ -2,11 +2,11 @@
 <!-- Copyright © 2024 Rick Beerendonk          -->
 
 <script>
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 </script>
 
-<h2>Page {$page.params.id}</h2>
+<h2>Page {page.params.id}</h2>
 
 <p>
-  {JSON.stringify($page)}
+  {JSON.stringify(page)}
 </p>
