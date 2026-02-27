@@ -5,4 +5,4 @@
   let { color } = $props();
 </script>
 
-<h1 style={`color: ${color}`}>Bottom</h1>
+<h1 style:color>Bottom</h1>
