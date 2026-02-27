@@ -4,6 +4,8 @@
   import { useDocumentHidden } from './useDocumentHidden.svelte.js';
 
   const visibility = useDocumentHidden();
+
+  $inspect(visibility.hidden);
 </script>
 
 <h1>Document is {visibility.hidden ? 'hidden' : 'visible'}</h1>
